@@ -1,0 +1,1548 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+--exclude	Makefile	/^	tar cpzf $(TARGET) --exclude=.svn include\/ lib\/libulib.a test\/$/;"	m
+EBUG	Makefile	/^	make DEBUG=-DUNDEBUG -C test\/$/;"	m
+TARGET	Makefile	/^TARGET	= ulib_dist.tar.gz$/;"	m
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+AES_BLOCK_SIZE	include/ulib/aes.h	58;"	d
+AES_KEY	include/ulib/aes.h	/^typedef struct aes_key_st AES_KEY;$/;"	t	typeref:struct:aes_key_st
+AES_MAXNR	include/ulib/aes.h	57;"	d
+__ULIB_AES_H	include/ulib/aes.h	53;"	d
+aes_key_st	include/ulib/aes.h	/^struct aes_key_st {$/;"	s
+rd_key	include/ulib/aes.h	/^	uint32_t rd_key[4 *(AES_MAXNR + 1)];$/;"	m	struct:aes_key_st
+rounds	include/ulib/aes.h	/^	int rounds;$/;"	m	struct:aes_key_st
+_ALIGN_HASH_H	include/ulib/alignhash.h	48;"	d
+_cur	include/ulib/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_map::const_iterator
+_cur	include/ulib/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_map::iterator
+_cur	include/ulib/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_set::const_iterator
+_cur	include/ulib/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_set::iterator
+_hashing	include/ulib/alignhash.h	/^		const hashing    _hashing;$/;"	m	struct:align_hash_map::const_iterator
+_hashing	include/ulib/alignhash.h	/^		const hashing    _hashing;$/;"	m	struct:align_hash_set::const_iterator
+_hashing	include/ulib/alignhash.h	/^		hashing          _hashing;$/;"	m	struct:align_hash_map::iterator
+_hashing	include/ulib/alignhash.h	/^		hashing          _hashing;$/;"	m	struct:align_hash_set::iterator
+_hashing	include/ulib/alignhash.h	/^	hashing _hashing;$/;"	m	class:align_hash_map
+_hashing	include/ulib/alignhash.h	/^	hashing _hashing;$/;"	m	class:align_hash_set
+align_hash_exception	include/ulib/alignhash.h	/^struct align_hash_exception : public std::exception$/;"	s
+align_hash_map	include/ulib/alignhash.h	/^	align_hash_map()$/;"	f	class:align_hash_map
+align_hash_map	include/ulib/alignhash.h	/^class align_hash_map$/;"	c
+align_hash_set	include/ulib/alignhash.h	/^	align_hash_set()$/;"	f	class:align_hash_set
+align_hash_set	include/ulib/alignhash.h	/^class align_hash_set$/;"	c
+begin	include/ulib/alignhash.h	/^	begin() const$/;"	f	class:align_hash_map
+begin	include/ulib/alignhash.h	/^	begin() const$/;"	f	class:align_hash_set
+begin	include/ulib/alignhash.h	/^	begin()$/;"	f	class:align_hash_map
+begin	include/ulib/alignhash.h	/^	begin()$/;"	f	class:align_hash_set
+bucket_count	include/ulib/alignhash.h	/^	bucket_count() const$/;"	f	class:align_hash_map
+bucket_count	include/ulib/alignhash.h	/^	bucket_count() const$/;"	f	class:align_hash_set
+clear	include/ulib/alignhash.h	/^	clear() { alignhash_clear(inclass, _hashing); }$/;"	f	class:align_hash_map
+clear	include/ulib/alignhash.h	/^	clear() { alignhash_clear(inclass, _hashing); }$/;"	f	class:align_hash_set
+const_iterator	include/ulib/alignhash.h	/^		const_iterator() { }$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	include/ulib/alignhash.h	/^		const_iterator() { }$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	include/ulib/alignhash.h	/^		const_iterator(const hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	include/ulib/alignhash.h	/^		const_iterator(const hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	include/ulib/alignhash.h	/^		const_iterator(const iterator &it)$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	include/ulib/alignhash.h	/^		const_iterator(const iterator &it)$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	include/ulib/alignhash.h	/^	struct const_iterator$/;"	s	class:align_hash_map
+const_iterator	include/ulib/alignhash.h	/^	struct const_iterator$/;"	s	class:align_hash_set
+const_pointer	include/ulib/alignhash.h	/^	typedef const _Val* const_pointer;$/;"	t	class:align_hash_map
+const_reference	include/ulib/alignhash.h	/^	typedef const _Val& const_reference;$/;"	t	class:align_hash_map
+contain	include/ulib/alignhash.h	/^	contain(const _Key &key) const$/;"	f	class:align_hash_map
+contain	include/ulib/alignhash.h	/^	contain(const _Key &key) const$/;"	f	class:align_hash_set
+empty	include/ulib/alignhash.h	/^	empty() const$/;"	f	class:align_hash_map
+empty	include/ulib/alignhash.h	/^	empty() const$/;"	f	class:align_hash_set
+end	include/ulib/alignhash.h	/^	end() const$/;"	f	class:align_hash_map
+end	include/ulib/alignhash.h	/^	end() const$/;"	f	class:align_hash_set
+end	include/ulib/alignhash.h	/^	end()$/;"	f	class:align_hash_map
+end	include/ulib/alignhash.h	/^	end()$/;"	f	class:align_hash_set
+erase	include/ulib/alignhash.h	/^	erase(const _Key &key)$/;"	f	class:align_hash_map
+erase	include/ulib/alignhash.h	/^	erase(const _Key &key)$/;"	f	class:align_hash_set
+erase	include/ulib/alignhash.h	/^	erase(const iterator &it) { alignhash_del(inclass, _hashing, it._cur); }$/;"	f	class:align_hash_map
+erase	include/ulib/alignhash.h	/^	erase(const iterator &it) { alignhash_del(inclass, _hashing, it._cur); }$/;"	f	class:align_hash_set
+find	include/ulib/alignhash.h	/^	find(const _Key &key) const$/;"	f	class:align_hash_map
+find	include/ulib/alignhash.h	/^	find(const _Key &key) const$/;"	f	class:align_hash_set
+find	include/ulib/alignhash.h	/^	find(const _Key &key)$/;"	f	class:align_hash_map
+find	include/ulib/alignhash.h	/^	find(const _Key &key)$/;"	f	class:align_hash_set
+find_or_insert	include/ulib/alignhash.h	/^	find_or_insert(const _Key &key, const _Val &val)$/;"	f	class:align_hash_map
+hashing	include/ulib/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_map::const_iterator
+hashing	include/ulib/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_map::iterator
+hashing	include/ulib/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_set::const_iterator
+hashing	include/ulib/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_set::iterator
+hashing	include/ulib/alignhash.h	/^	typedef alignhash_t(inclass) * hashing;$/;"	t	class:align_hash_map
+hashing	include/ulib/alignhash.h	/^	typedef alignhash_t(inclass) * hashing;$/;"	t	class:align_hash_set
+hashing_iterator	include/ulib/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_map::const_iterator
+hashing_iterator	include/ulib/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_map::iterator
+hashing_iterator	include/ulib/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_set::const_iterator
+hashing_iterator	include/ulib/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_set::iterator
+hashing_iterator	include/ulib/alignhash.h	/^	typedef ah_iter_t   hashing_iterator;$/;"	t	class:align_hash_map
+hashing_iterator	include/ulib/alignhash.h	/^	typedef ah_iter_t hashing_iterator;$/;"	t	class:align_hash_set
+insert	include/ulib/alignhash.h	/^	insert(const _Key &key)$/;"	f	class:align_hash_set
+insert	include/ulib/alignhash.h	/^	insert(const _Key &key, const _Val &val, bool displace = false)$/;"	f	class:align_hash_map
+iterator	include/ulib/alignhash.h	/^		iterator() { }$/;"	f	struct:align_hash_map::iterator
+iterator	include/ulib/alignhash.h	/^		iterator() { }$/;"	f	struct:align_hash_set::iterator
+iterator	include/ulib/alignhash.h	/^		iterator(hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_map::iterator
+iterator	include/ulib/alignhash.h	/^		iterator(hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_set::iterator
+iterator	include/ulib/alignhash.h	/^	struct iterator$/;"	s	class:align_hash_map
+iterator	include/ulib/alignhash.h	/^	struct iterator$/;"	s	class:align_hash_set
+key	include/ulib/alignhash.h	/^		key() const$/;"	f	struct:align_hash_map::const_iterator
+key	include/ulib/alignhash.h	/^		key() const$/;"	f	struct:align_hash_map::iterator
+key	include/ulib/alignhash.h	/^		key() const$/;"	f	struct:align_hash_set::const_iterator
+key	include/ulib/alignhash.h	/^		key() const$/;"	f	struct:align_hash_set::iterator
+operator !=	include/ulib/alignhash.h	/^		operator!=(const const_iterator &other) const$/;"	f	struct:align_hash_map::const_iterator
+operator !=	include/ulib/alignhash.h	/^		operator!=(const const_iterator &other) const$/;"	f	struct:align_hash_set::const_iterator
+operator !=	include/ulib/alignhash.h	/^		operator!=(const iterator &other) const$/;"	f	struct:align_hash_map::iterator
+operator !=	include/ulib/alignhash.h	/^		operator!=(const iterator &other) const$/;"	f	struct:align_hash_set::iterator
+operator *	include/ulib/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_map::const_iterator
+operator *	include/ulib/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_map::iterator
+operator *	include/ulib/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_set::const_iterator
+operator *	include/ulib/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_set::iterator
+operator ++	include/ulib/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_map::const_iterator
+operator ++	include/ulib/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_map::iterator
+operator ++	include/ulib/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_set::const_iterator
+operator ++	include/ulib/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_set::iterator
+operator ++	include/ulib/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_map::const_iterator
+operator ++	include/ulib/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_map::iterator
+operator ++	include/ulib/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_set::const_iterator
+operator ++	include/ulib/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_set::iterator
+operator ->	include/ulib/alignhash.h	/^		operator->() const$/;"	f	struct:align_hash_map::const_iterator
+operator ->	include/ulib/alignhash.h	/^		operator->() const$/;"	f	struct:align_hash_map::iterator
+operator ==	include/ulib/alignhash.h	/^		operator==(const const_iterator &other) const$/;"	f	struct:align_hash_map::const_iterator
+operator ==	include/ulib/alignhash.h	/^		operator==(const const_iterator &other) const$/;"	f	struct:align_hash_set::const_iterator
+operator ==	include/ulib/alignhash.h	/^		operator==(const iterator &other) const$/;"	f	struct:align_hash_map::iterator
+operator ==	include/ulib/alignhash.h	/^		operator==(const iterator &other) const$/;"	f	struct:align_hash_set::iterator
+operator []	include/ulib/alignhash.h	/^	operator[](const _Key &key)$/;"	f	class:align_hash_map
+operator []	include/ulib/alignhash.h	/^	operator[](const _Key &key)$/;"	f	class:align_hash_set
+pointer	include/ulib/alignhash.h	/^		typedef _Val* pointer;$/;"	t	struct:align_hash_map::iterator
+pointer	include/ulib/alignhash.h	/^		typedef const _Val* pointer;$/;"	t	struct:align_hash_map::const_iterator
+pointer	include/ulib/alignhash.h	/^	typedef _Val *      pointer;$/;"	t	class:align_hash_map
+reference	include/ulib/alignhash.h	/^		typedef _Val& reference;$/;"	t	struct:align_hash_map::iterator
+reference	include/ulib/alignhash.h	/^		typedef const _Val& reference;$/;"	t	struct:align_hash_map::const_iterator
+reference	include/ulib/alignhash.h	/^	typedef _Val &      reference;$/;"	t	class:align_hash_map
+size	include/ulib/alignhash.h	/^	size() const$/;"	f	class:align_hash_map
+size	include/ulib/alignhash.h	/^	size() const$/;"	f	class:align_hash_set
+size_type	include/ulib/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_map::const_iterator
+size_type	include/ulib/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_map::iterator
+size_type	include/ulib/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_set::const_iterator
+size_type	include/ulib/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_set::iterator
+size_type	include/ulib/alignhash.h	/^	typedef ah_iter_t   size_type;$/;"	t	class:align_hash_map
+size_type	include/ulib/alignhash.h	/^	typedef ah_iter_t size_type;$/;"	t	class:align_hash_set
+value	include/ulib/alignhash.h	/^		value() const$/;"	f	struct:align_hash_map::const_iterator
+value	include/ulib/alignhash.h	/^		value() const$/;"	f	struct:align_hash_map::iterator
+value	include/ulib/alignhash.h	/^		value() const$/;"	f	struct:align_hash_set::const_iterator
+value	include/ulib/alignhash.h	/^		value() const$/;"	f	struct:align_hash_set::iterator
+~align_hash_exception	include/ulib/alignhash.h	/^	~align_hash_exception() throw() { }$/;"	f	struct:align_hash_exception
+~align_hash_map	include/ulib/alignhash.h	/^	~align_hash_map()$/;"	f	class:align_hash_map
+~align_hash_set	include/ulib/alignhash.h	/^	~align_hash_set()$/;"	f	class:align_hash_set
+AH_CLEAR_BOTH	include/ulib/alignhash_tpl.h	45;"	d
+AH_CLEAR_BOTH	include/ulib/alignhash_tpl.h	60;"	d
+AH_CLEAR_DEL	include/ulib/alignhash_tpl.h	43;"	d
+AH_CLEAR_DEL	include/ulib/alignhash_tpl.h	58;"	d
+AH_CLEAR_EMPTY	include/ulib/alignhash_tpl.h	44;"	d
+AH_CLEAR_EMPTY	include/ulib/alignhash_tpl.h	59;"	d
+AH_FLAGS_BYTE	include/ulib/alignhash_tpl.h	48;"	d
+AH_FLAGS_BYTE	include/ulib/alignhash_tpl.h	63;"	d
+AH_INS_DEL	include/ulib/alignhash_tpl.h	/^	AH_INS_DEL = 2   \/**< inserted element is placed at a deleted bucket *\/$/;"	e	enum:__anon4
+AH_INS_ERR	include/ulib/alignhash_tpl.h	/^	AH_INS_ERR = 0,  \/**< insertion failed, the element to insert exists *\/$/;"	e	enum:__anon4
+AH_INS_NEW	include/ulib/alignhash_tpl.h	/^	AH_INS_NEW = 1,  \/**< inserted element is placed at a new bucket *\/$/;"	e	enum:__anon4
+AH_ISDEL	include/ulib/alignhash_tpl.h	40;"	d
+AH_ISDEL	include/ulib/alignhash_tpl.h	55;"	d
+AH_ISEITHER	include/ulib/alignhash_tpl.h	42;"	d
+AH_ISEITHER	include/ulib/alignhash_tpl.h	57;"	d
+AH_ISEMPTY	include/ulib/alignhash_tpl.h	41;"	d
+AH_ISEMPTY	include/ulib/alignhash_tpl.h	56;"	d
+AH_LOAD_FACTOR	include/ulib/alignhash_tpl.h	83;"	d
+AH_LOAD_FACTOR	include/ulib/alignhash_tpl.h	87;"	d
+AH_PROBE_STEP	include/ulib/alignhash_tpl.h	82;"	d
+AH_PROBE_STEP	include/ulib/alignhash_tpl.h	86;"	d
+AH_SET_DEL	include/ulib/alignhash_tpl.h	46;"	d
+AH_SET_DEL	include/ulib/alignhash_tpl.h	61;"	d
+DECLARE_ALIGNHASH	include/ulib/alignhash_tpl.h	90;"	d
+__ULIB_ALIGN_HASHING_H	include/ulib/alignhash_tpl.h	28;"	d
+ah_iter_t	include/ulib/alignhash_tpl.h	/^typedef uint32_t ah_iter_t;$/;"	t
+ah_iter_t	include/ulib/alignhash_tpl.h	/^typedef uint64_t ah_iter_t;$/;"	t
+ah_size_t	include/ulib/alignhash_tpl.h	/^typedef uint32_t ah_size_t;$/;"	t
+ah_size_t	include/ulib/alignhash_tpl.h	/^typedef uint64_t ah_size_t;$/;"	t
+alignhash_begin	include/ulib/alignhash_tpl.h	403;"	d
+alignhash_clear	include/ulib/alignhash_tpl.h	349;"	d
+alignhash_del	include/ulib/alignhash_tpl.h	390;"	d
+alignhash_destroy	include/ulib/alignhash_tpl.h	342;"	d
+alignhash_end	include/ulib/alignhash_tpl.h	409;"	d
+alignhash_equalfn	include/ulib/alignhash_tpl.h	309;"	d
+alignhash_exist	include/ulib/alignhash_tpl.h	397;"	d
+alignhash_get	include/ulib/alignhash_tpl.h	382;"	d
+alignhash_hashfn	include/ulib/alignhash_tpl.h	304;"	d
+alignhash_init	include/ulib/alignhash_tpl.h	335;"	d
+alignhash_key	include/ulib/alignhash_tpl.h	321;"	d
+alignhash_nbucket	include/ulib/alignhash_tpl.h	421;"	d
+alignhash_resize	include/ulib/alignhash_tpl.h	360;"	d
+alignhash_set	include/ulib/alignhash_tpl.h	373;"	d
+alignhash_size	include/ulib/alignhash_tpl.h	415;"	d
+alignhash_t	include/ulib/alignhash_tpl.h	314;"	d
+alignhash_value	include/ulib/alignhash_tpl.h	328;"	d
+__ULIB_ARGV_H	include/ulib/argv_split.h	27;"	d
+__BLOOM_FILTER_H	include/ulib/bfilter.h	27;"	d
+bitmap	include/ulib/bfilter.h	/^	unsigned long *bitmap;$/;"	m	struct:bloom_filter
+bloom_filter	include/ulib/bfilter.h	/^struct bloom_filter {$/;"	s
+nbits	include/ulib/bfilter.h	/^	unsigned long  nbits;$/;"	m	struct:bloom_filter
+nelem	include/ulib/bfilter.h	/^	unsigned long  nelem;  \/* estimated number of elements *\/$/;"	m	struct:bloom_filter
+nfunc	include/ulib/bfilter.h	/^	int            nfunc;  \/* number of hash functions *\/$/;"	m	struct:bloom_filter
+seeds	include/ulib/bfilter.h	/^	uint64_t      *seeds;  \/* seeds for hash functions *\/$/;"	m	struct:bloom_filter
+ABS	include/ulib/bit.h	47;"	d
+ALIGN	include/ulib/bit.h	39;"	d
+ALIGN_MASK	include/ulib/bit.h	38;"	d
+BITS_PER_BYTE	include/ulib/bit.h	31;"	d
+BITS_PER_LONG	include/ulib/bit.h	32;"	d
+BITS_TO_LONGS	include/ulib/bit.h	35;"	d
+BIT_ALTER	include/ulib/bit.h	55;"	d
+BIT_MASK	include/ulib/bit.h	37;"	d
+BIT_WORD	include/ulib/bit.h	36;"	d
+COUNT_LESS32	include/ulib/bit.h	66;"	d
+COUNT_LESS64	include/ulib/bit.h	69;"	d
+COUNT_MORE32	include/ulib/bit.h	76;"	d
+COUNT_MORE64	include/ulib/bit.h	79;"	d
+DIV_ROUND_UP	include/ulib/bit.h	34;"	d
+HAS_LESS32	include/ulib/bit.h	64;"	d
+HAS_LESS64	include/ulib/bit.h	65;"	d
+HAS_MORE32	include/ulib/bit.h	74;"	d
+HAS_MORE64	include/ulib/bit.h	75;"	d
+HAS_VALUE32	include/ulib/bit.h	60;"	d
+HAS_VALUE64	include/ulib/bit.h	61;"	d
+HAS_ZERO32	include/ulib/bit.h	57;"	d
+HAS_ZERO64	include/ulib/bit.h	58;"	d
+OPPOSITE_SIGN	include/ulib/bit.h	46;"	d
+ROR64	include/ulib/bit.h	40;"	d
+ROUND_UP32	include/ulib/bit.h	83;"	d
+ROUND_UP64	include/ulib/bit.h	93;"	d
+SIGN	include/ulib/bit.h	45;"	d
+XOR_MAX	include/ulib/bit.h	51;"	d
+XOR_MIN	include/ulib/bit.h	50;"	d
+__ULIB_BIT_H	include/ulib/bit.h	27;"	d
+__ffs	include/ulib/bit.h	343;"	d
+change_bit	include/ulib/bit.h	/^static inline void change_bit(int nr, volatile unsigned long *addr)$/;"	f
+clear_bit	include/ulib/bit.h	/^static inline void clear_bit(int nr, volatile unsigned long *addr)$/;"	f
+ffs32	include/ulib/bit.h	/^static inline int ffs32(uint32_t x)$/;"	f
+ffs64	include/ulib/bit.h	/^static inline int ffs64(uint64_t word)$/;"	f
+ffz	include/ulib/bit.h	384;"	d
+find_first_bit	include/ulib/bit.h	/^find_first_bit(const unsigned long *addr, unsigned long size)$/;"	f
+find_first_zero_bit	include/ulib/bit.h	/^find_first_zero_bit(const unsigned long *addr, unsigned long size)$/;"	f
+find_next_bit	include/ulib/bit.h	/^find_next_bit(const unsigned long *addr, unsigned long size, unsigned long offset)$/;"	f
+find_next_zero_bit	include/ulib/bit.h	/^find_next_zero_bit(const unsigned long *addr, unsigned long size, unsigned long offset)$/;"	f
+fls32	include/ulib/bit.h	/^static inline int fls32(uint32_t x)$/;"	f
+fls64	include/ulib/bit.h	/^static inline int fls64(uint64_t x)$/;"	f
+for_each_set_bit	include/ulib/bit.h	547;"	d
+hweight15	include/ulib/bit.h	/^static inline int hweight15(uint16_t a)$/;"	f
+hweight32	include/ulib/bit.h	/^static inline int hweight32(uint32_t a)$/;"	f
+hweight64	include/ulib/bit.h	/^static inline int hweight64(uint64_t a)$/;"	f
+hweight_long	include/ulib/bit.h	/^static inline int hweight_long(unsigned long a)$/;"	f
+hweight_next32	include/ulib/bit.h	/^static inline uint32_t hweight_next32(uint32_t a)$/;"	f
+hweight_next64	include/ulib/bit.h	/^static inline uint64_t hweight_next64(uint64_t a)$/;"	f
+ispow2_32	include/ulib/bit.h	/^static inline int ispow2_32(uint32_t n)$/;"	f
+ispow2_64	include/ulib/bit.h	/^static inline int ispow2_64(uint64_t n)$/;"	f
+rev32	include/ulib/bit.h	/^static inline uint32_t rev32(uint32_t n)$/;"	f
+rev64	include/ulib/bit.h	/^static inline uint64_t rev64(uint64_t n)$/;"	f
+rev8	include/ulib/bit.h	/^static inline unsigned char rev8(unsigned char n)$/;"	f
+set_bit	include/ulib/bit.h	/^static inline void set_bit(int nr, volatile unsigned long *addr)$/;"	f
+test_bit	include/ulib/bit.h	/^static inline int test_bit(int nr, const volatile unsigned long *addr)$/;"	f
+BITMAP_LAST_WORD_MASK	include/ulib/bitmap.h	181;"	d
+DECLARE_BITMAP	include/ulib/bitmap.h	178;"	d
+__LINUX_BITMAP_H	include/ulib/bitmap.h	29;"	d
+bitmap_and	include/ulib/bitmap.h	/^static inline int bitmap_and(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_andnot	include/ulib/bitmap.h	/^static inline int bitmap_andnot(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_complement	include/ulib/bitmap.h	/^static inline void bitmap_complement(unsigned long *dst, const unsigned long *src,$/;"	f
+bitmap_copy	include/ulib/bitmap.h	/^static inline void bitmap_copy(unsigned long *dst, const unsigned long *src,$/;"	f
+bitmap_empty	include/ulib/bitmap.h	/^static inline int bitmap_empty(const unsigned long *src, int nbits)$/;"	f
+bitmap_equal	include/ulib/bitmap.h	/^static inline int bitmap_equal(const unsigned long *src1,$/;"	f
+bitmap_fill	include/ulib/bitmap.h	/^static inline void bitmap_fill(unsigned long *dst, int nbits)$/;"	f
+bitmap_full	include/ulib/bitmap.h	/^static inline int bitmap_full(const unsigned long *src, int nbits)$/;"	f
+bitmap_intersects	include/ulib/bitmap.h	/^static inline int bitmap_intersects(const unsigned long *src1,$/;"	f
+bitmap_or	include/ulib/bitmap.h	/^static inline void bitmap_or(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_parse	include/ulib/bitmap.h	/^static inline int bitmap_parse(const char *buf, unsigned int buflen,$/;"	f
+bitmap_shift_left	include/ulib/bitmap.h	/^static inline void bitmap_shift_left(unsigned long *dst,$/;"	f
+bitmap_shift_right	include/ulib/bitmap.h	/^static inline void bitmap_shift_right(unsigned long *dst,$/;"	f
+bitmap_subset	include/ulib/bitmap.h	/^static inline int bitmap_subset(const unsigned long *src1,$/;"	f
+bitmap_weight	include/ulib/bitmap.h	/^static inline int bitmap_weight(const unsigned long *src, int nbits)$/;"	f
+bitmap_xor	include/ulib/bitmap.h	/^static inline void bitmap_xor(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_zero	include/ulib/bitmap.h	/^static inline void bitmap_zero(unsigned long *dst, int nbits)$/;"	f
+new	include/ulib/bitmap.h	339;"	d
+new	include/ulib/bitmap.h	35;"	d
+small_const_nbits	include/ulib/bitmap.h	187;"	d
+__ULIB_COMB_H	include/ulib/comb.h	27;"	d
+comb_t	include/ulib/comb.h	/^	typedef uint64_t comb_t;$/;"	t
+combiter_t	include/ulib/comb.h	/^	} combiter_t;$/;"	t	typeref:struct:__anon1
+cur	include/ulib/comb.h	/^		comb_t cur;$/;"	m	struct:__anon1
+max	include/ulib/comb.h	/^		comb_t max;$/;"	m	struct:__anon1
+__ULIB_COMMON_H	include/ulib/common.h	30;"	d
+clamp	include/ulib/common.h	89;"	d
+clamp_t	include/ulib/common.h	124;"	d
+clamp_val	include/ulib/common.h	142;"	d
+container_of	include/ulib/common.h	163;"	d
+generic_compare	include/ulib/common.h	167;"	d
+max	include/ulib/common.h	46;"	d
+max3	include/ulib/common.h	61;"	d
+max_t	include/ulib/common.h	109;"	d
+memswp	include/ulib/common.h	/^static inline void memswp(unsigned long *x, unsigned long *y, size_t size)$/;"	f
+min	include/ulib/common.h	40;"	d
+min3	include/ulib/common.h	52;"	d
+min_not_zero	include/ulib/common.h	75;"	d
+min_t	include/ulib/common.h	104;"	d
+swap	include/ulib/common.h	153;"	d
+DEF_PROMPT	include/ulib/console.h	29;"	d
+__ULIB_CONSOLE_H	include/ulib/console.h	27;"	d
+console_fcn_t	include/ulib/console.h	/^typedef int (*console_fcn_t) (int argc, const char *argv[]);$/;"	t
+console_t	include/ulib/console.h	/^} console_t;$/;"	t	typeref:struct:__anon3
+idx	include/ulib/console.h	/^	void * idx;$/;"	m	struct:__anon3
+pmpt	include/ulib/console.h	/^	char * pmpt;$/;"	m	struct:__anon3
+rbuf	include/ulib/console.h	/^	char * rbuf;$/;"	m	struct:__anon3
+rbuflen	include/ulib/console.h	/^	int    rbuflen;$/;"	m	struct:__anon3
+rfd	include/ulib/console.h	/^	int    rfd;$/;"	m	struct:__anon3
+__ULIB_FBSEARCH_H	include/ulib/fbsearch.h	27;"	d
+__ULIB_GCD_H	include/ulib/gcd.h	27;"	d
+__ULIB_HASH_H	include/ulib/hash.h	27;"	d
+DECLARE_HEAP	include/ulib/heap_tpl.h	33;"	d
+HEAP_LEFT	include/ulib/heap_tpl.h	29;"	d
+HEAP_PARENT	include/ulib/heap_tpl.h	31;"	d
+HEAP_RIGHT	include/ulib/heap_tpl.h	30;"	d
+__ULIB_HEAP_TPL_H	include/ulib/heap_tpl.h	27;"	d
+DECLARE_HEAPSORT	include/ulib/heapsort_tpl.h	31;"	d
+__ULIB_HEAPSORT_TPL_H	include/ulib/heapsort_tpl.h	27;"	d
+DUMP_PREFIX_ADDRESS	include/ulib/hexdump.h	/^	DUMP_PREFIX_ADDRESS,$/;"	e	enum:__anon6
+DUMP_PREFIX_NONE	include/ulib/hexdump.h	/^	DUMP_PREFIX_NONE,$/;"	e	enum:__anon6
+DUMP_PREFIX_OFFSET	include/ulib/hexdump.h	/^	DUMP_PREFIX_OFFSET$/;"	e	enum:__anon6
+__ULIB_HEXDUMP_H	include/ulib/hexdump.h	29;"	d
+HLIST_HEAD	include/ulib/list.h	602;"	d
+HLIST_HEAD_INIT	include/ulib/list.h	601;"	d
+INIT_HLIST_HEAD	include/ulib/list.h	603;"	d
+INIT_HLIST_NODE	include/ulib/list.h	/^static inline void INIT_HLIST_NODE(struct hlist_node *h)$/;"	f
+INIT_LIST_HEAD	include/ulib/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+LIST_HEAD	include/ulib/list.h	60;"	d
+LIST_HEAD_INIT	include/ulib/list.h	58;"	d
+_LINUX_LIST_H	include/ulib/list.h	29;"	d
+__hlist_del	include/ulib/list.h	/^static inline void __hlist_del(struct hlist_node *n)$/;"	f
+__list_add	include/ulib/list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_cut_position	include/ulib/list.h	/^static inline void __list_cut_position(struct list_head *list,$/;"	f
+__list_del	include/ulib/list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del_entry	include/ulib/list.h	/^static inline void __list_del_entry(struct list_head *entry)$/;"	f
+__list_for_each	include/ulib/list.h	413;"	d
+__list_splice	include/ulib/list.h	/^static inline void __list_splice(const struct list_head *list,$/;"	f
+first	include/ulib/list.h	/^	struct hlist_node *first;$/;"	m	struct:hlist_head	typeref:struct:hlist_head::hlist_node
+hlist_add_after	include/ulib/list.h	/^static inline void hlist_add_after(struct hlist_node *n,$/;"	f
+hlist_add_before	include/ulib/list.h	/^static inline void hlist_add_before(struct hlist_node *n,$/;"	f
+hlist_add_fake	include/ulib/list.h	/^static inline void hlist_add_fake(struct hlist_node *n)$/;"	f
+hlist_add_head	include/ulib/list.h	/^static inline void hlist_add_head(struct hlist_node *n, struct hlist_head *h)$/;"	f
+hlist_del	include/ulib/list.h	/^static inline void hlist_del(struct hlist_node *n)$/;"	f
+hlist_del_init	include/ulib/list.h	/^static inline void hlist_del_init(struct hlist_node *n)$/;"	f
+hlist_empty	include/ulib/list.h	/^static inline int hlist_empty(const struct hlist_head *h)$/;"	f
+hlist_entry	include/ulib/list.h	694;"	d
+hlist_for_each	include/ulib/list.h	697;"	d
+hlist_for_each_entry	include/ulib/list.h	712;"	d
+hlist_for_each_entry_continue	include/ulib/list.h	724;"	d
+hlist_for_each_entry_from	include/ulib/list.h	736;"	d
+hlist_for_each_entry_safe	include/ulib/list.h	749;"	d
+hlist_for_each_safe	include/ulib/list.h	701;"	d
+hlist_head	include/ulib/list.h	/^struct hlist_head {$/;"	s
+hlist_move_list	include/ulib/list.h	/^static inline void hlist_move_list(struct hlist_head *old,$/;"	f
+hlist_node	include/ulib/list.h	/^struct hlist_node {$/;"	s
+hlist_unhashed	include/ulib/list.h	/^static inline int hlist_unhashed(const struct hlist_node *h)$/;"	f
+list_add	include/ulib/list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	include/ulib/list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_cut_position	include/ulib/list.h	/^static inline void list_cut_position(struct list_head *list,$/;"	f
+list_del	include/ulib/list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	include/ulib/list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	include/ulib/list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_empty_careful	include/ulib/list.h	/^static inline int list_empty_careful(const struct list_head *head)$/;"	f
+list_entry	include/ulib/list.h	380;"	d
+list_first_entry	include/ulib/list.h	391;"	d
+list_for_each	include/ulib/list.h	399;"	d
+list_for_each_entry	include/ulib/list.h	452;"	d
+list_for_each_entry_continue	include/ulib/list.h	488;"	d
+list_for_each_entry_continue_reverse	include/ulib/list.h	502;"	d
+list_for_each_entry_from	include/ulib/list.h	515;"	d
+list_for_each_entry_reverse	include/ulib/list.h	463;"	d
+list_for_each_entry_safe	include/ulib/list.h	526;"	d
+list_for_each_entry_safe_continue	include/ulib/list.h	542;"	d
+list_for_each_entry_safe_from	include/ulib/list.h	558;"	d
+list_for_each_entry_safe_reverse	include/ulib/list.h	573;"	d
+list_for_each_prev	include/ulib/list.h	421;"	d
+list_for_each_prev_safe	include/ulib/list.h	441;"	d
+list_for_each_safe	include/ulib/list.h	431;"	d
+list_head	include/ulib/list.h	/^struct list_head {$/;"	s
+list_is_last	include/ulib/list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f
+list_is_singular	include/ulib/list.h	/^static inline int list_is_singular(const struct list_head *head)$/;"	f
+list_move	include/ulib/list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	include/ulib/list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_prepare_entry	include/ulib/list.h	476;"	d
+list_replace	include/ulib/list.h	/^static inline void list_replace(struct list_head *old,$/;"	f
+list_replace_init	include/ulib/list.h	/^static inline void list_replace_init(struct list_head *old,$/;"	f
+list_rotate_left	include/ulib/list.h	/^static inline void list_rotate_left(struct list_head *head)$/;"	f
+list_safe_reset_next	include/ulib/list.h	591;"	d
+list_splice	include/ulib/list.h	/^static inline void list_splice(const struct list_head *list,$/;"	f
+list_splice_init	include/ulib/list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+list_splice_tail	include/ulib/list.h	/^static inline void list_splice_tail(struct list_head *list,$/;"	f
+list_splice_tail_init	include/ulib/list.h	/^static inline void list_splice_tail_init(struct list_head *list,$/;"	f
+new	include/ulib/list.h	34;"	d
+new	include/ulib/list.h	756;"	d
+next	include/ulib/list.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::hlist_node
+next	include/ulib/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+pprev	include/ulib/list.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::
+prefetch	include/ulib/list.h	372;"	d
+prev	include/ulib/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+_LINUX_LIST_SORT_H	include/ulib/listsort.h	29;"	d
+ULIB_DEBUG	include/ulib/log.h	35;"	d
+ULIB_DEBUG	include/ulib/log.h	37;"	d
+ULIB_FATAL	include/ulib/log.h	45;"	d
+ULIB_LOG	include/ulib/log.h	31;"	d
+ULIB_NOTICE	include/ulib/log.h	41;"	d
+ULIB_WARNING	include/ulib/log.h	43;"	d
+__ULIB_LOG_H	include/ulib/log.h	27;"	d
+MD5_CTX	include/ulib/md5sum.h	/^} MD5_CTX;$/;"	t	typeref:struct:__anon7
+__ULIB_MD5_H	include/ulib/md5sum.h	27;"	d
+buf	include/ulib/md5sum.h	/^	uint32_t buf[4];            \/* scratch buffer *\/$/;"	m	struct:__anon7
+digest	include/ulib/md5sum.h	/^	unsigned char digest[16];   \/* actual digest after MD5Final call *\/$/;"	m	struct:__anon7
+i	include/ulib/md5sum.h	/^	uint32_t i[2];              \/* number of _bits_ handled mod 2^64 *\/$/;"	m	struct:__anon7
+in	include/ulib/md5sum.h	/^	unsigned char in[64];       \/* input buffer *\/$/;"	m	struct:__anon7
+DECLARE_PART	include/ulib/part_tpl.h	35;"	d
+__ULIB_PART_TPL_H	include/ulib/part_tpl.h	27;"	d
+RAND_INT2_MIX64	include/ulib/rand_tpl.h	108;"	d
+RAND_INT_MIX64	include/ulib/rand_tpl.h	98;"	d
+RAND_NR_COMBINE	include/ulib/rand_tpl.h	57;"	d
+RAND_NR_DOUBLE	include/ulib/rand_tpl.h	82;"	d
+RAND_NR_INIT	include/ulib/rand_tpl.h	68;"	d
+RAND_NR_LC64	include/ulib/rand_tpl.h	51;"	d
+RAND_NR_MIX	include/ulib/rand_tpl.h	62;"	d
+RAND_NR_MWC64	include/ulib/rand_tpl.h	54;"	d
+RAND_NR_NEXT	include/ulib/rand_tpl.h	78;"	d
+RAND_NR_XS64	include/ulib/rand_tpl.h	49;"	d
+RAND_SAMPLE	include/ulib/rand_tpl.h	85;"	d
+RAND_XORSHIFT	include/ulib/rand_tpl.h	33;"	d
+RAND_XORSHIFT32	include/ulib/rand_tpl.h	45;"	d
+RAND_XORSHIFT64	include/ulib/rand_tpl.h	47;"	d
+RAND_XORSHIFT_R	include/ulib/rand_tpl.h	39;"	d
+__ULIB_RAND_TPL_H	include/ulib/rand_tpl.h	27;"	d
+__ULIB_RC4_H	include/ulib/rc4.h	27;"	d
+rc4_key_t	include/ulib/rc4.h	/^typedef struct rc4_key_t {$/;"	s
+rc4_key_t	include/ulib/rc4.h	/^} rc4_key_t;$/;"	t	typeref:struct:rc4_key_t
+state	include/ulib/rc4.h	/^	unsigned char state[256];$/;"	m	struct:rc4_key_t
+x	include/ulib/rc4.h	/^	unsigned char x;$/;"	m	struct:rc4_key_t
+y	include/ulib/rc4.h	/^	unsigned char y;$/;"	m	struct:rc4_key_t
+SHA1_CONTEXT	include/ulib/sha1sum.h	/^} SHA1_CONTEXT;$/;"	t	typeref:struct:__anon5
+__ULIB_SHA1SUM_H	include/ulib/sha1sum.h	51;"	d
+buf	include/ulib/sha1sum.h	/^    unsigned char buf[64];$/;"	m	struct:__anon5
+count	include/ulib/sha1sum.h	/^    int  count;$/;"	m	struct:__anon5
+h0	include/ulib/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon5
+h1	include/ulib/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon5
+h2	include/ulib/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon5
+h3	include/ulib/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon5
+h4	include/ulib/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon5
+nblocks	include/ulib/sha1sum.h	/^    uint32_t  nblocks;$/;"	m	struct:__anon5
+SHA256Context	include/ulib/sha256sum.h	/^typedef struct _SHA256Context SHA256Context;$/;"	t	typeref:struct:_SHA256Context
+SHA256_HASH_SIZE	include/ulib/sha256sum.h	31;"	d
+SHA256_HASH_WORDS	include/ulib/sha256sum.h	32;"	d
+_SHA256Context	include/ulib/sha256sum.h	/^struct _SHA256Context {$/;"	s
+__ULIB_SHA256_H	include/ulib/sha256sum.h	27;"	d
+buffer	include/ulib/sha256sum.h	/^	} buffer;$/;"	m	struct:_SHA256Context	typeref:union:_SHA256Context::__anon2
+bufferLength	include/ulib/sha256sum.h	/^	uint32_t bufferLength;$/;"	m	struct:_SHA256Context
+bytes	include/ulib/sha256sum.h	/^		uint8_t bytes[64];$/;"	m	union:_SHA256Context::__anon2
+hash	include/ulib/sha256sum.h	/^	uint32_t hash[SHA256_HASH_WORDS];$/;"	m	struct:_SHA256Context
+totalLength	include/ulib/sha256sum.h	/^	uint64_t totalLength;$/;"	m	struct:_SHA256Context
+words	include/ulib/sha256sum.h	/^		uint32_t words[16];$/;"	m	union:_SHA256Context::__anon2
+__ULIB_STRUTILS_H	include/ulib/strutils.h	27;"	d
+__ULIB_TIMER_H	include/ulib/timer.h	27;"	d
+timer_start	include/ulib/timer.h	/^static inline void timer_start(struct timespec *ts)$/;"	f
+timer_stop	include/ulib/timer.h	/^static inline double timer_stop(const struct timespec *ts)$/;"	f
+AVL_EMPTY	include/ulib/tree.h	69;"	d
+AVL_ROOT	include/ulib/tree.h	58;"	d
+AVL_ROOT_INIT	include/ulib/tree.h	56;"	d
+INIT_AVL_ROOT	include/ulib/tree.h	61;"	d
+INIT_TREE_ROOT	include/ulib/tree.h	51;"	d
+NIL	include/ulib/tree.h	44;"	d
+SPLAY_EMPTY	include/ulib/tree.h	68;"	d
+TREE_EMPTY	include/ulib/tree.h	67;"	d
+TREE_ROOT	include/ulib/tree.h	48;"	d
+TREE_ROOT_INIT	include/ulib/tree.h	46;"	d
+__ULIB_TREE_H	include/ulib/tree.h	27;"	d
+avl_entry	include/ulib/tree.h	255;"	d
+avl_for_each	include/ulib/tree.h	314;"	d
+avl_for_each_entry	include/ulib/tree.h	345;"	d
+avl_for_each_entry_safe	include/ulib/tree.h	357;"	d
+avl_for_each_prev	include/ulib/tree.h	323;"	d
+avl_for_each_safe	include/ulib/tree.h	333;"	d
+avl_root	include/ulib/tree.h	/^struct avl_root {$/;"	s
+balance	include/ulib/tree.h	/^	int balance:3;$/;"	m	struct:avl_root
+left	include/ulib/tree.h	/^	struct avl_root *left, *right;$/;"	m	struct:avl_root	typeref:struct:avl_root::avl_root
+left	include/ulib/tree.h	/^	struct tree_root *left, *right;$/;"	m	struct:tree_root	typeref:struct:tree_root::tree_root
+new	include/ulib/tree.h	30;"	d
+new	include/ulib/tree.h	365;"	d
+parent	include/ulib/tree.h	/^	struct avl_root *parent;$/;"	m	struct:avl_root	typeref:struct:avl_root::avl_root
+parent	include/ulib/tree.h	/^	struct tree_root *parent;$/;"	m	struct:tree_root	typeref:struct:tree_root::tree_root
+right	include/ulib/tree.h	/^	struct avl_root *left, *right;$/;"	m	struct:avl_root	typeref:struct:avl_root::
+right	include/ulib/tree.h	/^	struct tree_root *left, *right;$/;"	m	struct:tree_root	typeref:struct:tree_root::
+tree_entry	include/ulib/tree.h	246;"	d
+tree_for_each	include/ulib/tree.h	262;"	d
+tree_for_each_entry	include/ulib/tree.h	291;"	d
+tree_for_each_entry_safe	include/ulib/tree.h	303;"	d
+tree_for_each_prev	include/ulib/tree.h	270;"	d
+tree_for_each_safe	include/ulib/tree.h	280;"	d
+tree_root	include/ulib/tree.h	/^struct tree_root {$/;"	s
+RB_AUGMENT	include/ulib/tree_tpl.h	337;"	d
+RB_BLACK	include/ulib/tree_tpl.h	308;"	d
+RB_COLOR	include/ulib/tree_tpl.h	321;"	d
+RB_EMPTY	include/ulib/tree_tpl.h	323;"	d
+RB_ENTRY	include/ulib/tree_tpl.h	310;"	d
+RB_FIND	include/ulib/tree_tpl.h	728;"	d
+RB_FOREACH	include/ulib/tree_tpl.h	735;"	d
+RB_FOREACH_FROM	include/ulib/tree_tpl.h	740;"	d
+RB_FOREACH_REVERSE	include/ulib/tree_tpl.h	750;"	d
+RB_FOREACH_REVERSE_FROM	include/ulib/tree_tpl.h	755;"	d
+RB_FOREACH_REVERSE_SAFE	include/ulib/tree_tpl.h	760;"	d
+RB_FOREACH_SAFE	include/ulib/tree_tpl.h	745;"	d
+RB_GENERATE	include/ulib/tree_tpl.h	400;"	d
+RB_GENERATE_INTERNAL	include/ulib/tree_tpl.h	404;"	d
+RB_GENERATE_STATIC	include/ulib/tree_tpl.h	402;"	d
+RB_HEAD	include/ulib/tree_tpl.h	296;"	d
+RB_INF	include/ulib/tree_tpl.h	724;"	d
+RB_INIT	include/ulib/tree_tpl.h	304;"	d
+RB_INITIALIZER	include/ulib/tree_tpl.h	301;"	d
+RB_INSERT	include/ulib/tree_tpl.h	726;"	d
+RB_LEFT	include/ulib/tree_tpl.h	318;"	d
+RB_MAX	include/ulib/tree_tpl.h	733;"	d
+RB_MIN	include/ulib/tree_tpl.h	732;"	d
+RB_NEGINF	include/ulib/tree_tpl.h	723;"	d
+RB_NEXT	include/ulib/tree_tpl.h	730;"	d
+RB_NFIND	include/ulib/tree_tpl.h	729;"	d
+RB_PARENT	include/ulib/tree_tpl.h	320;"	d
+RB_PREV	include/ulib/tree_tpl.h	731;"	d
+RB_PROTOTYPE	include/ulib/tree_tpl.h	381;"	d
+RB_PROTOTYPE_INTERNAL	include/ulib/tree_tpl.h	385;"	d
+RB_PROTOTYPE_STATIC	include/ulib/tree_tpl.h	383;"	d
+RB_RED	include/ulib/tree_tpl.h	309;"	d
+RB_REMOVE	include/ulib/tree_tpl.h	727;"	d
+RB_RIGHT	include/ulib/tree_tpl.h	319;"	d
+RB_ROOT	include/ulib/tree_tpl.h	322;"	d
+RB_ROTATE_LEFT	include/ulib/tree_tpl.h	340;"	d
+RB_ROTATE_RIGHT	include/ulib/tree_tpl.h	360;"	d
+RB_SET	include/ulib/tree_tpl.h	325;"	d
+RB_SET_BLACKRED	include/ulib/tree_tpl.h	331;"	d
+SPLAY_ASSEMBLE	include/ulib/tree_tpl.h	110;"	d
+SPLAY_EMPTY	include/ulib/tree_tpl.h	83;"	d
+SPLAY_ENTRY	include/ulib/tree_tpl.h	74;"	d
+SPLAY_FIND	include/ulib/tree_tpl.h	283;"	d
+SPLAY_FOREACH	include/ulib/tree_tpl.h	290;"	d
+SPLAY_GENERATE	include/ulib/tree_tpl.h	161;"	d
+SPLAY_HEAD	include/ulib/tree_tpl.h	62;"	d
+SPLAY_INF	include/ulib/tree_tpl.h	279;"	d
+SPLAY_INIT	include/ulib/tree_tpl.h	70;"	d
+SPLAY_INITIALIZER	include/ulib/tree_tpl.h	67;"	d
+SPLAY_INSERT	include/ulib/tree_tpl.h	281;"	d
+SPLAY_LEFT	include/ulib/tree_tpl.h	80;"	d
+SPLAY_LINKLEFT	include/ulib/tree_tpl.h	98;"	d
+SPLAY_LINKRIGHT	include/ulib/tree_tpl.h	104;"	d
+SPLAY_MAX	include/ulib/tree_tpl.h	287;"	d
+SPLAY_MIN	include/ulib/tree_tpl.h	285;"	d
+SPLAY_NEGINF	include/ulib/tree_tpl.h	278;"	d
+SPLAY_NEXT	include/ulib/tree_tpl.h	284;"	d
+SPLAY_PROTOTYPE	include/ulib/tree_tpl.h	119;"	d
+SPLAY_REMOVE	include/ulib/tree_tpl.h	282;"	d
+SPLAY_RIGHT	include/ulib/tree_tpl.h	81;"	d
+SPLAY_ROOT	include/ulib/tree_tpl.h	82;"	d
+SPLAY_ROTATE_LEFT	include/ulib/tree_tpl.h	92;"	d
+SPLAY_ROTATE_RIGHT	include/ulib/tree_tpl.h	86;"	d
+_SYS_TREE_H_	include/ulib/tree_tpl.h	31;"	d
+__ULIB_TREEUTILS_H	include/ulib/treeutils.h	27;"	d
+ULIB_VERSION_MAJOR	include/ulib/version.h	29;"	d
+ULIB_VERSION_MINOR	include/ulib/version.h	30;"	d
+__ULIB_VERSION_H	include/ulib/version.h	27;"	d
+TARGET	lib/Makefile	/^TARGET	= libulib.a$/;"	m
+dll_error	lib/makedll.bat	/^:dll_error$/;"	l
+done	lib/makedll.bat	/^:done$/;"	l
+CC	src/base/Makefile	/^CC		?= gcc$/;"	m
+CFLAGS	src/base/Makefile	/^CFLAGS		?= -g3 -O3 -Wall -W -Werror -pipe -c -fno-strict-aliasing$/;"	m
+COMMON_OBJS	src/base/Makefile	/^COMMON_OBJS	= version.o$/;"	m
+CRYPT_OBJS	src/base/Makefile	/^CRYPT_OBJS	= aes.o sha1sum.o md5sum.o sha256sum.o rc4.o$/;"	m
+DEBUG	src/base/Makefile	/^DEBUG		?=$/;"	m
+DS_OBJS	src/base/Makefile	/^DS_OBJS		= tree.o treeutils.o bitmap.o$/;"	m
+INCPATH	src/base/Makefile	/^INCPATH		= $(WORKROOT)\/include\/ulib$/;"	m
+LIBPATH	src/base/Makefile	/^LIBPATH		= $(WORKROOT)\/lib$/;"	m
+MISC_OBJS	src/base/Makefile	/^MISC_OBJS	= strutils.o gcd.o hash.o hexdump.o$/;"	m
+OBJS	src/base/Makefile	/^OBJS		= $(DS_OBJS) $(SEARCH_OBJS) $(CRYPT_OBJS) \\$/;"	m
+SEARCH_OBJS	src/base/Makefile	/^SEARCH_OBJS	= fbsearch.o$/;"	m
+SORT_OBJS	src/base/Makefile	/^SORT_OBJS	= listsort.o$/;"	m
+TARGET	src/base/Makefile	/^TARGET		= $(LIBPATH)\/libubase.a$/;"	m
+WORKROOT	src/base/Makefile	/^WORKROOT	= ..\/..$/;"	m
+AES_BLOCK_OP	src/base/aes.c	1299;"	d	file:
+AES_BLOCK_OP	src/base/aes.c	1301;"	d	file:
+AES_BLOCK_OP32	src/base/aes.c	1289;"	d	file:
+AES_BLOCK_OP64	src/base/aes.c	1282;"	d	file:
+AES_cbc_decrypt	src/base/aes.c	/^void AES_cbc_decrypt(const unsigned char *in, unsigned char *out, unsigned char *ivec,$/;"	f
+AES_cbc_encrypt	src/base/aes.c	/^void AES_cbc_encrypt(const unsigned char *in, unsigned char *out, unsigned char *ivec,$/;"	f
+AES_decrypt	src/base/aes.c	/^void AES_decrypt(const unsigned char *in, unsigned char *out,$/;"	f
+AES_encrypt	src/base/aes.c	/^void AES_encrypt(const unsigned char *in, unsigned char *out,$/;"	f
+AES_set_decrypt_key	src/base/aes.c	/^int AES_set_decrypt_key(const unsigned char *userKey, const int bits,$/;"	f
+AES_set_encrypt_key	src/base/aes.c	/^int AES_set_encrypt_key(const unsigned char *userKey, const int bits,$/;"	f
+FULL_UNROLL	src/base/aes.c	64;"	d	file:
+GETU32	src/base/aes.c	65;"	d	file:
+MAXKB	src/base/aes.c	60;"	d	file:
+MAXKC	src/base/aes.c	59;"	d	file:
+MAXNR	src/base/aes.c	61;"	d	file:
+PUTU32	src/base/aes.c	66;"	d	file:
+Td0	src/base/aes.c	/^static const u32 Td0[256] = {$/;"	v	file:
+Td1	src/base/aes.c	/^static const u32 Td1[256] = {$/;"	v	file:
+Td2	src/base/aes.c	/^static const u32 Td2[256] = {$/;"	v	file:
+Td3	src/base/aes.c	/^static const u32 Td3[256] = {$/;"	v	file:
+Td4	src/base/aes.c	/^static const u32 Td4[256] = {$/;"	v	file:
+Te0	src/base/aes.c	/^static const u32 Te0[256] = {$/;"	v	file:
+Te1	src/base/aes.c	/^static const u32 Te1[256] = {$/;"	v	file:
+Te2	src/base/aes.c	/^static const u32 Te2[256] = {$/;"	v	file:
+Te3	src/base/aes.c	/^static const u32 Te3[256] = {$/;"	v	file:
+Te4	src/base/aes.c	/^static const u32 Te4[256] = {$/;"	v	file:
+rcon	src/base/aes.c	/^static const u32 rcon[] = {$/;"	v	file:
+u16	src/base/aes.c	/^typedef uint16_t u16;$/;"	t	file:
+u32	src/base/aes.c	/^typedef uint32_t u32;$/;"	t	file:
+u8	src/base/aes.c	/^typedef uint8_t  u8;$/;"	t	file:
+AES_BLOCK_SIZE	src/base/aes.h	58;"	d
+AES_KEY	src/base/aes.h	/^typedef struct aes_key_st AES_KEY;$/;"	t	typeref:struct:aes_key_st
+AES_MAXNR	src/base/aes.h	57;"	d
+__ULIB_AES_H	src/base/aes.h	53;"	d
+aes_key_st	src/base/aes.h	/^struct aes_key_st {$/;"	s
+rd_key	src/base/aes.h	/^	uint32_t rd_key[4 *(AES_MAXNR + 1)];$/;"	m	struct:aes_key_st
+rounds	src/base/aes.h	/^	int rounds;$/;"	m	struct:aes_key_st
+AH_CLEAR_BOTH	src/base/alignhash_tpl.h	45;"	d
+AH_CLEAR_BOTH	src/base/alignhash_tpl.h	60;"	d
+AH_CLEAR_DEL	src/base/alignhash_tpl.h	43;"	d
+AH_CLEAR_DEL	src/base/alignhash_tpl.h	58;"	d
+AH_CLEAR_EMPTY	src/base/alignhash_tpl.h	44;"	d
+AH_CLEAR_EMPTY	src/base/alignhash_tpl.h	59;"	d
+AH_FLAGS_BYTE	src/base/alignhash_tpl.h	48;"	d
+AH_FLAGS_BYTE	src/base/alignhash_tpl.h	63;"	d
+AH_INS_DEL	src/base/alignhash_tpl.h	/^	AH_INS_DEL = 2   \/**< inserted element is placed at a deleted bucket *\/$/;"	e	enum:__anon13
+AH_INS_ERR	src/base/alignhash_tpl.h	/^	AH_INS_ERR = 0,  \/**< insertion failed, the element to insert exists *\/$/;"	e	enum:__anon13
+AH_INS_NEW	src/base/alignhash_tpl.h	/^	AH_INS_NEW = 1,  \/**< inserted element is placed at a new bucket *\/$/;"	e	enum:__anon13
+AH_ISDEL	src/base/alignhash_tpl.h	40;"	d
+AH_ISDEL	src/base/alignhash_tpl.h	55;"	d
+AH_ISEITHER	src/base/alignhash_tpl.h	42;"	d
+AH_ISEITHER	src/base/alignhash_tpl.h	57;"	d
+AH_ISEMPTY	src/base/alignhash_tpl.h	41;"	d
+AH_ISEMPTY	src/base/alignhash_tpl.h	56;"	d
+AH_LOAD_FACTOR	src/base/alignhash_tpl.h	83;"	d
+AH_LOAD_FACTOR	src/base/alignhash_tpl.h	87;"	d
+AH_PROBE_STEP	src/base/alignhash_tpl.h	82;"	d
+AH_PROBE_STEP	src/base/alignhash_tpl.h	86;"	d
+AH_SET_DEL	src/base/alignhash_tpl.h	46;"	d
+AH_SET_DEL	src/base/alignhash_tpl.h	61;"	d
+DECLARE_ALIGNHASH	src/base/alignhash_tpl.h	90;"	d
+__ULIB_ALIGN_HASHING_H	src/base/alignhash_tpl.h	28;"	d
+ah_iter_t	src/base/alignhash_tpl.h	/^typedef uint32_t ah_iter_t;$/;"	t
+ah_iter_t	src/base/alignhash_tpl.h	/^typedef uint64_t ah_iter_t;$/;"	t
+ah_size_t	src/base/alignhash_tpl.h	/^typedef uint32_t ah_size_t;$/;"	t
+ah_size_t	src/base/alignhash_tpl.h	/^typedef uint64_t ah_size_t;$/;"	t
+alignhash_begin	src/base/alignhash_tpl.h	403;"	d
+alignhash_clear	src/base/alignhash_tpl.h	349;"	d
+alignhash_del	src/base/alignhash_tpl.h	390;"	d
+alignhash_destroy	src/base/alignhash_tpl.h	342;"	d
+alignhash_end	src/base/alignhash_tpl.h	409;"	d
+alignhash_equalfn	src/base/alignhash_tpl.h	309;"	d
+alignhash_exist	src/base/alignhash_tpl.h	397;"	d
+alignhash_get	src/base/alignhash_tpl.h	382;"	d
+alignhash_hashfn	src/base/alignhash_tpl.h	304;"	d
+alignhash_init	src/base/alignhash_tpl.h	335;"	d
+alignhash_key	src/base/alignhash_tpl.h	321;"	d
+alignhash_nbucket	src/base/alignhash_tpl.h	421;"	d
+alignhash_resize	src/base/alignhash_tpl.h	360;"	d
+alignhash_set	src/base/alignhash_tpl.h	373;"	d
+alignhash_size	src/base/alignhash_tpl.h	415;"	d
+alignhash_t	src/base/alignhash_tpl.h	314;"	d
+alignhash_value	src/base/alignhash_tpl.h	328;"	d
+ABS	src/base/bit.h	47;"	d
+ALIGN	src/base/bit.h	39;"	d
+ALIGN_MASK	src/base/bit.h	38;"	d
+BITS_PER_BYTE	src/base/bit.h	31;"	d
+BITS_PER_LONG	src/base/bit.h	32;"	d
+BITS_TO_LONGS	src/base/bit.h	35;"	d
+BIT_ALTER	src/base/bit.h	55;"	d
+BIT_MASK	src/base/bit.h	37;"	d
+BIT_WORD	src/base/bit.h	36;"	d
+COUNT_LESS32	src/base/bit.h	66;"	d
+COUNT_LESS64	src/base/bit.h	69;"	d
+COUNT_MORE32	src/base/bit.h	76;"	d
+COUNT_MORE64	src/base/bit.h	79;"	d
+DIV_ROUND_UP	src/base/bit.h	34;"	d
+HAS_LESS32	src/base/bit.h	64;"	d
+HAS_LESS64	src/base/bit.h	65;"	d
+HAS_MORE32	src/base/bit.h	74;"	d
+HAS_MORE64	src/base/bit.h	75;"	d
+HAS_VALUE32	src/base/bit.h	60;"	d
+HAS_VALUE64	src/base/bit.h	61;"	d
+HAS_ZERO32	src/base/bit.h	57;"	d
+HAS_ZERO64	src/base/bit.h	58;"	d
+OPPOSITE_SIGN	src/base/bit.h	46;"	d
+ROR64	src/base/bit.h	40;"	d
+ROUND_UP32	src/base/bit.h	83;"	d
+ROUND_UP64	src/base/bit.h	93;"	d
+SIGN	src/base/bit.h	45;"	d
+XOR_MAX	src/base/bit.h	51;"	d
+XOR_MIN	src/base/bit.h	50;"	d
+__ULIB_BIT_H	src/base/bit.h	27;"	d
+__ffs	src/base/bit.h	343;"	d
+change_bit	src/base/bit.h	/^static inline void change_bit(int nr, volatile unsigned long *addr)$/;"	f
+clear_bit	src/base/bit.h	/^static inline void clear_bit(int nr, volatile unsigned long *addr)$/;"	f
+ffs32	src/base/bit.h	/^static inline int ffs32(uint32_t x)$/;"	f
+ffs64	src/base/bit.h	/^static inline int ffs64(uint64_t word)$/;"	f
+ffz	src/base/bit.h	384;"	d
+find_first_bit	src/base/bit.h	/^find_first_bit(const unsigned long *addr, unsigned long size)$/;"	f
+find_first_zero_bit	src/base/bit.h	/^find_first_zero_bit(const unsigned long *addr, unsigned long size)$/;"	f
+find_next_bit	src/base/bit.h	/^find_next_bit(const unsigned long *addr, unsigned long size, unsigned long offset)$/;"	f
+find_next_zero_bit	src/base/bit.h	/^find_next_zero_bit(const unsigned long *addr, unsigned long size, unsigned long offset)$/;"	f
+fls32	src/base/bit.h	/^static inline int fls32(uint32_t x)$/;"	f
+fls64	src/base/bit.h	/^static inline int fls64(uint64_t x)$/;"	f
+for_each_set_bit	src/base/bit.h	547;"	d
+hweight15	src/base/bit.h	/^static inline int hweight15(uint16_t a)$/;"	f
+hweight32	src/base/bit.h	/^static inline int hweight32(uint32_t a)$/;"	f
+hweight64	src/base/bit.h	/^static inline int hweight64(uint64_t a)$/;"	f
+hweight_long	src/base/bit.h	/^static inline int hweight_long(unsigned long a)$/;"	f
+hweight_next32	src/base/bit.h	/^static inline uint32_t hweight_next32(uint32_t a)$/;"	f
+hweight_next64	src/base/bit.h	/^static inline uint64_t hweight_next64(uint64_t a)$/;"	f
+ispow2_32	src/base/bit.h	/^static inline int ispow2_32(uint32_t n)$/;"	f
+ispow2_64	src/base/bit.h	/^static inline int ispow2_64(uint64_t n)$/;"	f
+rev32	src/base/bit.h	/^static inline uint32_t rev32(uint32_t n)$/;"	f
+rev64	src/base/bit.h	/^static inline uint64_t rev64(uint64_t n)$/;"	f
+rev8	src/base/bit.h	/^static inline unsigned char rev8(unsigned char n)$/;"	f
+set_bit	src/base/bit.h	/^static inline void set_bit(int nr, volatile unsigned long *addr)$/;"	f
+test_bit	src/base/bit.h	/^static inline int test_bit(int nr, const volatile unsigned long *addr)$/;"	f
+BASEDEC	src/base/bitmap.c	367;"	d	file:
+BITMAP_FIRST_WORD_MASK	src/base/bitmap.c	282;"	d	file:
+CHUNKSZ	src/base/bitmap.c	365;"	d	file:
+REG_OP_ALLOC	src/base/bitmap.c	/^	REG_OP_ALLOC,		\/* set all bits in region *\/$/;"	e	enum:__anon12	file:
+REG_OP_ISFREE	src/base/bitmap.c	/^	REG_OP_ISFREE,		\/* true if region is all zero bits *\/$/;"	e	enum:__anon12	file:
+REG_OP_RELEASE	src/base/bitmap.c	/^	REG_OP_RELEASE,		\/* clear all bits in region *\/$/;"	e	enum:__anon12	file:
+__bitmap_and	src/base/bitmap.c	/^int __bitmap_and(unsigned long *dst, const unsigned long *bitmap1,$/;"	f
+__bitmap_andnot	src/base/bitmap.c	/^int __bitmap_andnot(unsigned long *dst, const unsigned long *bitmap1,$/;"	f
+__bitmap_complement	src/base/bitmap.c	/^void __bitmap_complement(unsigned long *dst, const unsigned long *src, int bits)$/;"	f
+__bitmap_empty	src/base/bitmap.c	/^int __bitmap_empty(const unsigned long *bitmap, int bits)$/;"	f
+__bitmap_equal	src/base/bitmap.c	/^int __bitmap_equal(const unsigned long *bitmap1,$/;"	f
+__bitmap_full	src/base/bitmap.c	/^int __bitmap_full(const unsigned long *bitmap, int bits)$/;"	f
+__bitmap_intersects	src/base/bitmap.c	/^int __bitmap_intersects(const unsigned long *bitmap1,$/;"	f
+__bitmap_or	src/base/bitmap.c	/^void __bitmap_or(unsigned long *dst, const unsigned long *bitmap1,$/;"	f
+__bitmap_parse	src/base/bitmap.c	/^int __bitmap_parse(const char *buf, unsigned int buflen, unsigned long *maskp, int nmaskbits)$/;"	f
+__bitmap_shift_left	src/base/bitmap.c	/^void __bitmap_shift_left(unsigned long *dst,$/;"	f
+__bitmap_shift_right	src/base/bitmap.c	/^void __bitmap_shift_right(unsigned long *dst,$/;"	f
+__bitmap_subset	src/base/bitmap.c	/^int __bitmap_subset(const unsigned long *bitmap1,$/;"	f
+__bitmap_weight	src/base/bitmap.c	/^int __bitmap_weight(const unsigned long *bitmap, int bits)$/;"	f
+__bitmap_xor	src/base/bitmap.c	/^void __bitmap_xor(unsigned long *dst, const unsigned long *bitmap1,$/;"	f
+__reg_op	src/base/bitmap.c	/^static int __reg_op(unsigned long *bitmap, int pos, int order, int reg_op)$/;"	f	file:
+bitmap_allocate_region	src/base/bitmap.c	/^int bitmap_allocate_region(unsigned long *bitmap, int pos, int order)$/;"	f
+bitmap_bitremap	src/base/bitmap.c	/^int bitmap_bitremap(int oldbit, const unsigned long *old,$/;"	f
+bitmap_clear	src/base/bitmap.c	/^void bitmap_clear(unsigned long *map, int start, int nr)$/;"	f
+bitmap_copy_le	src/base/bitmap.c	/^void bitmap_copy_le(void *dst, const unsigned long *src, int nbits)$/;"	f
+bitmap_find_free_region	src/base/bitmap.c	/^int bitmap_find_free_region(unsigned long *bitmap, int bits, int order)$/;"	f
+bitmap_find_next_zero_area	src/base/bitmap.c	/^unsigned long bitmap_find_next_zero_area(unsigned long *map,$/;"	f
+bitmap_fold	src/base/bitmap.c	/^void bitmap_fold(unsigned long *dst, const unsigned long *orig,$/;"	f
+bitmap_onto	src/base/bitmap.c	/^void bitmap_onto(unsigned long *dst, const unsigned long *orig,$/;"	f
+bitmap_ord_to_pos	src/base/bitmap.c	/^static int bitmap_ord_to_pos(const unsigned long *buf, int ord, int bits)$/;"	f	file:
+bitmap_parselist	src/base/bitmap.c	/^int bitmap_parselist(const char *bp, unsigned long *maskp, unsigned int nmaskbits)$/;"	f
+bitmap_pos_to_ord	src/base/bitmap.c	/^static int bitmap_pos_to_ord(const unsigned long *buf, int pos, int bits)$/;"	f	file:
+bitmap_release_region	src/base/bitmap.c	/^void bitmap_release_region(unsigned long *bitmap, int pos, int order)$/;"	f
+bitmap_remap	src/base/bitmap.c	/^void bitmap_remap(unsigned long *dst, const unsigned long *src,$/;"	f
+bitmap_set	src/base/bitmap.c	/^void bitmap_set(unsigned long *map, int start, int nr)$/;"	f
+bitmap_snlistprintf	src/base/bitmap.c	/^int bitmap_snlistprintf(char *buf, unsigned int buflen,$/;"	f
+bitmap_snprintf	src/base/bitmap.c	/^int bitmap_snprintf(char *buf, unsigned int buflen,$/;"	f
+bsnl_emit	src/base/bitmap.c	/^static inline int bsnl_emit(char *buf, int buflen, int rbot, int rtop, int len)$/;"	f	file:
+nbits_to_hold_value	src/base/bitmap.c	366;"	d	file:
+BITMAP_LAST_WORD_MASK	src/base/bitmap.h	181;"	d
+DECLARE_BITMAP	src/base/bitmap.h	178;"	d
+__LINUX_BITMAP_H	src/base/bitmap.h	29;"	d
+bitmap_and	src/base/bitmap.h	/^static inline int bitmap_and(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_andnot	src/base/bitmap.h	/^static inline int bitmap_andnot(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_complement	src/base/bitmap.h	/^static inline void bitmap_complement(unsigned long *dst, const unsigned long *src,$/;"	f
+bitmap_copy	src/base/bitmap.h	/^static inline void bitmap_copy(unsigned long *dst, const unsigned long *src,$/;"	f
+bitmap_empty	src/base/bitmap.h	/^static inline int bitmap_empty(const unsigned long *src, int nbits)$/;"	f
+bitmap_equal	src/base/bitmap.h	/^static inline int bitmap_equal(const unsigned long *src1,$/;"	f
+bitmap_fill	src/base/bitmap.h	/^static inline void bitmap_fill(unsigned long *dst, int nbits)$/;"	f
+bitmap_full	src/base/bitmap.h	/^static inline int bitmap_full(const unsigned long *src, int nbits)$/;"	f
+bitmap_intersects	src/base/bitmap.h	/^static inline int bitmap_intersects(const unsigned long *src1,$/;"	f
+bitmap_or	src/base/bitmap.h	/^static inline void bitmap_or(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_parse	src/base/bitmap.h	/^static inline int bitmap_parse(const char *buf, unsigned int buflen,$/;"	f
+bitmap_shift_left	src/base/bitmap.h	/^static inline void bitmap_shift_left(unsigned long *dst,$/;"	f
+bitmap_shift_right	src/base/bitmap.h	/^static inline void bitmap_shift_right(unsigned long *dst,$/;"	f
+bitmap_subset	src/base/bitmap.h	/^static inline int bitmap_subset(const unsigned long *src1,$/;"	f
+bitmap_weight	src/base/bitmap.h	/^static inline int bitmap_weight(const unsigned long *src, int nbits)$/;"	f
+bitmap_xor	src/base/bitmap.h	/^static inline void bitmap_xor(unsigned long *dst, const unsigned long *src1,$/;"	f
+bitmap_zero	src/base/bitmap.h	/^static inline void bitmap_zero(unsigned long *dst, int nbits)$/;"	f
+new	src/base/bitmap.h	339;"	d
+new	src/base/bitmap.h	35;"	d
+small_const_nbits	src/base/bitmap.h	187;"	d
+__ULIB_COMMON_H	src/base/common.h	30;"	d
+clamp	src/base/common.h	89;"	d
+clamp_t	src/base/common.h	124;"	d
+clamp_val	src/base/common.h	142;"	d
+container_of	src/base/common.h	163;"	d
+generic_compare	src/base/common.h	167;"	d
+max	src/base/common.h	46;"	d
+max3	src/base/common.h	61;"	d
+max_t	src/base/common.h	109;"	d
+memswp	src/base/common.h	/^static inline void memswp(unsigned long *x, unsigned long *y, size_t size)$/;"	f
+min	src/base/common.h	40;"	d
+min3	src/base/common.h	52;"	d
+min_not_zero	src/base/common.h	75;"	d
+min_t	src/base/common.h	104;"	d
+swap	src/base/common.h	153;"	d
+_XOPEN_SOURCE	src/base/fbsearch.c	26;"	d	file:
+__findline	src/base/fbsearch.c	/^__findline(int fd, int (*comp) (const char *, void *), $/;"	f	file:
+__seekline	src/base/fbsearch.c	/^__seekline(char *base, int len)$/;"	f	file:
+findfirstline	src/base/fbsearch.c	/^ssize_t findfirstline(int fd, int (*comp) (const char *, void *),$/;"	f
+findline	src/base/fbsearch.c	/^ssize_t findline(int fd, int (*comp) (const char *, void *),$/;"	f
+__ULIB_FBSEARCH_H	src/base/fbsearch.h	27;"	d
+egcd	src/base/gcd.c	/^void egcd(unsigned long a, unsigned long b, long *x, long *y)$/;"	f
+gcd	src/base/gcd.c	/^unsigned long gcd(unsigned long a, unsigned long b)$/;"	f
+invert	src/base/gcd.c	/^unsigned long invert(unsigned long m, unsigned long b)$/;"	f
+__ULIB_GCD_H	src/base/gcd.h	27;"	d
+HASH_BIG_ENDIAN	src/base/hash.c	81;"	d	file:
+HASH_BIG_ENDIAN	src/base/hash.c	86;"	d	file:
+HASH_BIG_ENDIAN	src/base/hash.c	89;"	d	file:
+HASH_LITTLE_ENDIAN	src/base/hash.c	80;"	d	file:
+HASH_LITTLE_ENDIAN	src/base/hash.c	85;"	d	file:
+HASH_LITTLE_ENDIAN	src/base/hash.c	88;"	d	file:
+final	src/base/hash.c	438;"	d	file:
+hash_crapwow32	src/base/hash.c	/^uint32_t hash_crapwow32(const unsigned char *buf, uint32_t len, uint32_t seed)$/;"	f
+hash_crapwow64	src/base/hash.c	/^uint64_t hash_crapwow64(const unsigned char *buf, uint64_t len, uint64_t seed)$/;"	f
+hash_crc32	src/base/hash.c	/^uint32_t hash_crc32(const unsigned char *buf, size_t len)$/;"	f
+hash_djb2	src/base/hash.c	/^uint32_t hash_djb2(const unsigned char *str)$/;"	f
+hash_fnv32	src/base/hash.c	/^uint32_t hash_fnv32(const unsigned char *buf, size_t len)$/;"	f
+hash_fnv64	src/base/hash.c	/^uint64_t hash_fnv64(const unsigned char *buf, size_t len)$/;"	f
+hash_murmur32	src/base/hash.c	/^uint32_t hash_murmur32(const unsigned char *buf, size_t len, uint32_t seed)$/;"	f
+hash_murmur64	src/base/hash.c	/^uint64_t hash_murmur64(const unsigned char *buf, size_t len, uint64_t seed)$/;"	f
+hash_sdbm	src/base/hash.c	/^uint32_t hash_sdbm(const unsigned char *str)$/;"	f
+hashbig	src/base/hash.c	/^uint32_t hashbig( const void *key, size_t length, uint32_t initval)$/;"	f
+hashlittle	src/base/hash.c	/^uint32_t hashlittle( const void *key, size_t length, uint32_t initval)$/;"	f
+hashlittle2	src/base/hash.c	/^void hashlittle2( $/;"	f
+hashmask	src/base/hash.c	93;"	d	file:
+hashsize	src/base/hash.c	92;"	d	file:
+hashword	src/base/hash.c	/^uint32_t hashword($/;"	f
+hashword2	src/base/hash.c	/^void hashword2 ($/;"	f
+mix	src/base/hash.c	403;"	d	file:
+rot	src/base/hash.c	94;"	d	file:
+__ULIB_HASH_H	src/base/hash.h	27;"	d
+DECLARE_HEAP	src/base/heap_tpl.h	33;"	d
+HEAP_LEFT	src/base/heap_tpl.h	29;"	d
+HEAP_PARENT	src/base/heap_tpl.h	31;"	d
+HEAP_RIGHT	src/base/heap_tpl.h	30;"	d
+__ULIB_HEAP_TPL_H	src/base/heap_tpl.h	27;"	d
+DECLARE_HEAPSORT	src/base/heapsort_tpl.h	31;"	d
+__ULIB_HEAPSORT_TPL_H	src/base/heapsort_tpl.h	27;"	d
+hex2bin	src/base/hexdump.c	/^void hex2bin(uint8_t *dst, const char *src, size_t count)$/;"	f
+hex_asc	src/base/hexdump.c	/^const char hex_asc[] = "0123456789abcdef";$/;"	v
+hex_asc_hi	src/base/hexdump.c	31;"	d	file:
+hex_asc_lo	src/base/hexdump.c	30;"	d	file:
+hex_dump_to_buffer	src/base/hexdump.c	/^void hex_dump_to_buffer(const void *buf, size_t len, int rowsize,$/;"	f
+hex_to_bin	src/base/hexdump.c	/^int hex_to_bin(char ch)$/;"	f
+print_hex_dump	src/base/hexdump.c	/^void print_hex_dump(const char *prefix_str, int prefix_type,$/;"	f
+print_hex_dump_bytes	src/base/hexdump.c	/^void print_hex_dump_bytes(const char *prefix_str, int prefix_type,$/;"	f
+DUMP_PREFIX_ADDRESS	src/base/hexdump.h	/^	DUMP_PREFIX_ADDRESS,$/;"	e	enum:__anon15
+DUMP_PREFIX_NONE	src/base/hexdump.h	/^	DUMP_PREFIX_NONE,$/;"	e	enum:__anon15
+DUMP_PREFIX_OFFSET	src/base/hexdump.h	/^	DUMP_PREFIX_OFFSET$/;"	e	enum:__anon15
+__ULIB_HEXDUMP_H	src/base/hexdump.h	29;"	d
+HLIST_HEAD	src/base/list.h	602;"	d
+HLIST_HEAD_INIT	src/base/list.h	601;"	d
+INIT_HLIST_HEAD	src/base/list.h	603;"	d
+INIT_HLIST_NODE	src/base/list.h	/^static inline void INIT_HLIST_NODE(struct hlist_node *h)$/;"	f
+INIT_LIST_HEAD	src/base/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+LIST_HEAD	src/base/list.h	60;"	d
+LIST_HEAD_INIT	src/base/list.h	58;"	d
+_LINUX_LIST_H	src/base/list.h	29;"	d
+__hlist_del	src/base/list.h	/^static inline void __hlist_del(struct hlist_node *n)$/;"	f
+__list_add	src/base/list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_cut_position	src/base/list.h	/^static inline void __list_cut_position(struct list_head *list,$/;"	f
+__list_del	src/base/list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del_entry	src/base/list.h	/^static inline void __list_del_entry(struct list_head *entry)$/;"	f
+__list_for_each	src/base/list.h	413;"	d
+__list_splice	src/base/list.h	/^static inline void __list_splice(const struct list_head *list,$/;"	f
+first	src/base/list.h	/^	struct hlist_node *first;$/;"	m	struct:hlist_head	typeref:struct:hlist_head::hlist_node
+hlist_add_after	src/base/list.h	/^static inline void hlist_add_after(struct hlist_node *n,$/;"	f
+hlist_add_before	src/base/list.h	/^static inline void hlist_add_before(struct hlist_node *n,$/;"	f
+hlist_add_fake	src/base/list.h	/^static inline void hlist_add_fake(struct hlist_node *n)$/;"	f
+hlist_add_head	src/base/list.h	/^static inline void hlist_add_head(struct hlist_node *n, struct hlist_head *h)$/;"	f
+hlist_del	src/base/list.h	/^static inline void hlist_del(struct hlist_node *n)$/;"	f
+hlist_del_init	src/base/list.h	/^static inline void hlist_del_init(struct hlist_node *n)$/;"	f
+hlist_empty	src/base/list.h	/^static inline int hlist_empty(const struct hlist_head *h)$/;"	f
+hlist_entry	src/base/list.h	694;"	d
+hlist_for_each	src/base/list.h	697;"	d
+hlist_for_each_entry	src/base/list.h	712;"	d
+hlist_for_each_entry_continue	src/base/list.h	724;"	d
+hlist_for_each_entry_from	src/base/list.h	736;"	d
+hlist_for_each_entry_safe	src/base/list.h	749;"	d
+hlist_for_each_safe	src/base/list.h	701;"	d
+hlist_head	src/base/list.h	/^struct hlist_head {$/;"	s
+hlist_move_list	src/base/list.h	/^static inline void hlist_move_list(struct hlist_head *old,$/;"	f
+hlist_node	src/base/list.h	/^struct hlist_node {$/;"	s
+hlist_unhashed	src/base/list.h	/^static inline int hlist_unhashed(const struct hlist_node *h)$/;"	f
+list_add	src/base/list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	src/base/list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_cut_position	src/base/list.h	/^static inline void list_cut_position(struct list_head *list,$/;"	f
+list_del	src/base/list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	src/base/list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	src/base/list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_empty_careful	src/base/list.h	/^static inline int list_empty_careful(const struct list_head *head)$/;"	f
+list_entry	src/base/list.h	380;"	d
+list_first_entry	src/base/list.h	391;"	d
+list_for_each	src/base/list.h	399;"	d
+list_for_each_entry	src/base/list.h	452;"	d
+list_for_each_entry_continue	src/base/list.h	488;"	d
+list_for_each_entry_continue_reverse	src/base/list.h	502;"	d
+list_for_each_entry_from	src/base/list.h	515;"	d
+list_for_each_entry_reverse	src/base/list.h	463;"	d
+list_for_each_entry_safe	src/base/list.h	526;"	d
+list_for_each_entry_safe_continue	src/base/list.h	542;"	d
+list_for_each_entry_safe_from	src/base/list.h	558;"	d
+list_for_each_entry_safe_reverse	src/base/list.h	573;"	d
+list_for_each_prev	src/base/list.h	421;"	d
+list_for_each_prev_safe	src/base/list.h	441;"	d
+list_for_each_safe	src/base/list.h	431;"	d
+list_head	src/base/list.h	/^struct list_head {$/;"	s
+list_is_last	src/base/list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f
+list_is_singular	src/base/list.h	/^static inline int list_is_singular(const struct list_head *head)$/;"	f
+list_move	src/base/list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	src/base/list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_prepare_entry	src/base/list.h	476;"	d
+list_replace	src/base/list.h	/^static inline void list_replace(struct list_head *old,$/;"	f
+list_replace_init	src/base/list.h	/^static inline void list_replace_init(struct list_head *old,$/;"	f
+list_rotate_left	src/base/list.h	/^static inline void list_rotate_left(struct list_head *head)$/;"	f
+list_safe_reset_next	src/base/list.h	591;"	d
+list_splice	src/base/list.h	/^static inline void list_splice(const struct list_head *list,$/;"	f
+list_splice_init	src/base/list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+list_splice_tail	src/base/list.h	/^static inline void list_splice_tail(struct list_head *list,$/;"	f
+list_splice_tail_init	src/base/list.h	/^static inline void list_splice_tail_init(struct list_head *list,$/;"	f
+new	src/base/list.h	34;"	d
+new	src/base/list.h	756;"	d
+next	src/base/list.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::hlist_node
+next	src/base/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+pprev	src/base/list.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::
+prefetch	src/base/list.h	372;"	d
+prev	src/base/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+MAX_LIST_LENGTH_BITS	src/base/listsort.c	31;"	d	file:
+list_sort	src/base/listsort.c	/^void list_sort(void *priv, struct list_head *head,$/;"	f
+merge	src/base/listsort.c	/^static struct list_head *merge(void *priv,$/;"	f	file:
+merge_and_restore_back_links	src/base/listsort.c	/^static void merge_and_restore_back_links(void *priv,$/;"	f	file:
+_LINUX_LIST_SORT_H	src/base/listsort.h	29;"	d
+ULIB_DEBUG	src/base/log.h	35;"	d
+ULIB_DEBUG	src/base/log.h	37;"	d
+ULIB_FATAL	src/base/log.h	45;"	d
+ULIB_LOG	src/base/log.h	31;"	d
+ULIB_NOTICE	src/base/log.h	41;"	d
+ULIB_WARNING	src/base/log.h	43;"	d
+__ULIB_LOG_H	src/base/log.h	27;"	d
+F	src/base/md5sum.c	67;"	d	file:
+FF	src/base/md5sum.c	77;"	d	file:
+G	src/base/md5sum.c	68;"	d	file:
+GG	src/base/md5sum.c	82;"	d	file:
+H	src/base/md5sum.c	69;"	d	file:
+HH	src/base/md5sum.c	87;"	d	file:
+I	src/base/md5sum.c	70;"	d	file:
+II	src/base/md5sum.c	92;"	d	file:
+MD5Final	src/base/md5sum.c	/^void MD5Final(MD5_CTX *mdContext)$/;"	f
+MD5Init	src/base/md5sum.c	/^void MD5Init(MD5_CTX *mdContext)$/;"	f
+MD5Update	src/base/md5sum.c	/^void MD5Update(MD5_CTX *mdContext, const unsigned char *inBuf, unsigned int inLen)$/;"	f
+PADDING	src/base/md5sum.c	/^static unsigned char PADDING[64] = {$/;"	v	file:
+ROTATE_LEFT	src/base/md5sum.c	73;"	d	file:
+S11	src/base/md5sum.c	189;"	d	file:
+S12	src/base/md5sum.c	190;"	d	file:
+S13	src/base/md5sum.c	191;"	d	file:
+S14	src/base/md5sum.c	192;"	d	file:
+S21	src/base/md5sum.c	211;"	d	file:
+S22	src/base/md5sum.c	212;"	d	file:
+S23	src/base/md5sum.c	213;"	d	file:
+S24	src/base/md5sum.c	214;"	d	file:
+S31	src/base/md5sum.c	233;"	d	file:
+S32	src/base/md5sum.c	234;"	d	file:
+S33	src/base/md5sum.c	235;"	d	file:
+S34	src/base/md5sum.c	236;"	d	file:
+S41	src/base/md5sum.c	255;"	d	file:
+S42	src/base/md5sum.c	256;"	d	file:
+S43	src/base/md5sum.c	257;"	d	file:
+S44	src/base/md5sum.c	258;"	d	file:
+Transform	src/base/md5sum.c	/^static void Transform(uint32_t *buf, uint32_t *in)$/;"	f	file:
+MD5_CTX	src/base/md5sum.h	/^} MD5_CTX;$/;"	t	typeref:struct:__anon16
+__ULIB_MD5_H	src/base/md5sum.h	27;"	d
+buf	src/base/md5sum.h	/^	uint32_t buf[4];            \/* scratch buffer *\/$/;"	m	struct:__anon16
+digest	src/base/md5sum.h	/^	unsigned char digest[16];   \/* actual digest after MD5Final call *\/$/;"	m	struct:__anon16
+i	src/base/md5sum.h	/^	uint32_t i[2];              \/* number of _bits_ handled mod 2^64 *\/$/;"	m	struct:__anon16
+in	src/base/md5sum.h	/^	unsigned char in[64];       \/* input buffer *\/$/;"	m	struct:__anon16
+DECLARE_PART	src/base/part_tpl.h	35;"	d
+__ULIB_PART_TPL_H	src/base/part_tpl.h	27;"	d
+RAND_INT2_MIX64	src/base/rand_tpl.h	108;"	d
+RAND_INT_MIX64	src/base/rand_tpl.h	98;"	d
+RAND_NR_COMBINE	src/base/rand_tpl.h	57;"	d
+RAND_NR_DOUBLE	src/base/rand_tpl.h	82;"	d
+RAND_NR_INIT	src/base/rand_tpl.h	68;"	d
+RAND_NR_LC64	src/base/rand_tpl.h	51;"	d
+RAND_NR_MIX	src/base/rand_tpl.h	62;"	d
+RAND_NR_MWC64	src/base/rand_tpl.h	54;"	d
+RAND_NR_NEXT	src/base/rand_tpl.h	78;"	d
+RAND_NR_XS64	src/base/rand_tpl.h	49;"	d
+RAND_SAMPLE	src/base/rand_tpl.h	85;"	d
+RAND_XORSHIFT	src/base/rand_tpl.h	33;"	d
+RAND_XORSHIFT32	src/base/rand_tpl.h	45;"	d
+RAND_XORSHIFT64	src/base/rand_tpl.h	47;"	d
+RAND_XORSHIFT_R	src/base/rand_tpl.h	39;"	d
+__ULIB_RAND_TPL_H	src/base/rand_tpl.h	27;"	d
+rc4_crypt	src/base/rc4.c	/^void rc4_crypt(unsigned char *buf, size_t len, rc4_key_t * key)$/;"	f
+rc4_set_key	src/base/rc4.c	/^void rc4_set_key(const unsigned char *buf, size_t len, rc4_key_t * key)$/;"	f
+__ULIB_RC4_H	src/base/rc4.h	27;"	d
+rc4_key_t	src/base/rc4.h	/^typedef struct rc4_key_t {$/;"	s
+rc4_key_t	src/base/rc4.h	/^} rc4_key_t;$/;"	t	typeref:struct:rc4_key_t
+state	src/base/rc4.h	/^	unsigned char state[256];$/;"	m	struct:rc4_key_t
+x	src/base/rc4.h	/^	unsigned char x;$/;"	m	struct:rc4_key_t
+y	src/base/rc4.h	/^	unsigned char y;$/;"	m	struct:rc4_key_t
+BIG_ENDIAN_HOST	src/base/sha1sum.c	53;"	d	file:
+F1	src/base/sha1sum.c	120;"	d	file:
+F2	src/base/sha1sum.c	121;"	d	file:
+F3	src/base/sha1sum.c	122;"	d	file:
+F4	src/base/sha1sum.c	123;"	d	file:
+K1	src/base/sha1sum.c	116;"	d	file:
+K2	src/base/sha1sum.c	117;"	d	file:
+K3	src/base/sha1sum.c	118;"	d	file:
+K4	src/base/sha1sum.c	119;"	d	file:
+M	src/base/sha1sum.c	126;"	d	file:
+R	src/base/sha1sum.c	130;"	d	file:
+SHA1Final	src/base/sha1sum.c	/^void SHA1Final(SHA1_CONTEXT *hd)$/;"	f
+SHA1Init	src/base/sha1sum.c	/^void SHA1Init(SHA1_CONTEXT *hd)$/;"	f
+SHA1Update	src/base/sha1sum.c	/^void SHA1Update(SHA1_CONTEXT *hd, const unsigned char *inbuf, size_t inlen)$/;"	f
+X	src/base/sha1sum.c	311;"	d	file:
+X	src/base/sha1sum.c	321;"	d	file:
+rol	src/base/sha1sum.c	/^rol( uint32_t x, int n)$/;"	f	file:
+rol	src/base/sha1sum.c	68;"	d	file:
+transform	src/base/sha1sum.c	/^transform(SHA1_CONTEXT *hd, const unsigned char *data )$/;"	f	file:
+SHA1_CONTEXT	src/base/sha1sum.h	/^} SHA1_CONTEXT;$/;"	t	typeref:struct:__anon14
+__ULIB_SHA1SUM_H	src/base/sha1sum.h	51;"	d
+buf	src/base/sha1sum.h	/^    unsigned char buf[64];$/;"	m	struct:__anon14
+count	src/base/sha1sum.h	/^    int  count;$/;"	m	struct:__anon14
+h0	src/base/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon14
+h1	src/base/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon14
+h2	src/base/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon14
+h3	src/base/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon14
+h4	src/base/sha1sum.h	/^    uint32_t  h0, h1, h2, h3, h4;$/;"	m	struct:__anon14
+nblocks	src/base/sha1sum.h	/^    uint32_t  nblocks;$/;"	m	struct:__anon14
+BYTESWAP	src/base/sha256sum.c	103;"	d	file:
+BYTESWAP	src/base/sha256sum.c	81;"	d	file:
+BYTESWAP	src/base/sha256sum.c	86;"	d	file:
+BYTESWAP64	src/base/sha256sum.c	104;"	d	file:
+BYTESWAP64	src/base/sha256sum.c	82;"	d	file:
+BYTESWAP64	src/base/sha256sum.c	88;"	d	file:
+Ch	src/base/sha256sum.c	38;"	d	file:
+DO_ROUND	src/base/sha256sum.c	45;"	d	file:
+K	src/base/sha256sum.c	/^static const uint32_t K[64] = {$/;"	v	file:
+Maj	src/base/sha256sum.c	39;"	d	file:
+ROTL	src/base/sha256sum.c	35;"	d	file:
+ROTR	src/base/sha256sum.c	36;"	d	file:
+SHA256Final	src/base/sha256sum.c	/^void SHA256Final(SHA256Context * sc, uint8_t hash[SHA256_HASH_SIZE])$/;"	f
+SHA256Guts	src/base/sha256sum.c	/^static void SHA256Guts(SHA256Context * sc, const uint32_t * cbuf)$/;"	f	file:
+SHA256Init	src/base/sha256sum.c	/^void SHA256Init(SHA256Context * sc)$/;"	f
+SHA256Update	src/base/sha256sum.c	/^void SHA256Update(SHA256Context * sc, const void *data, uint32_t len)$/;"	f
+SHA256_UNROLL	src/base/sha256sum.c	225;"	d	file:
+SIGMA0	src/base/sha256sum.c	40;"	d	file:
+SIGMA1	src/base/sha256sum.c	41;"	d	file:
+_BYTESWAP	src/base/sha256sum.c	106;"	d	file:
+_BYTESWAP64	src/base/sha256sum.c	108;"	d	file:
+__byteswap64	src/base/sha256sum.c	/^static inline uint64_t __byteswap64(uint64_t x)$/;"	f	file:
+_byteswap	src/base/sha256sum.c	/^static inline uint32_t _byteswap(uint32_t x)$/;"	f	file:
+_byteswap64	src/base/sha256sum.c	/^static inline uint64_t _byteswap64(uint64_t x)$/;"	f	file:
+burnStack	src/base/sha256sum.c	/^static void burnStack(int size)$/;"	f	file:
+littleEndian	src/base/sha256sum.c	/^static int littleEndian;$/;"	v	file:
+padding	src/base/sha256sum.c	/^static const uint8_t padding[64] = {$/;"	v	file:
+setEndian	src/base/sha256sum.c	/^static inline void setEndian(void)$/;"	f	file:
+sigma0	src/base/sha256sum.c	42;"	d	file:
+sigma1	src/base/sha256sum.c	43;"	d	file:
+SHA256Context	src/base/sha256sum.h	/^typedef struct _SHA256Context SHA256Context;$/;"	t	typeref:struct:_SHA256Context
+SHA256_HASH_SIZE	src/base/sha256sum.h	31;"	d
+SHA256_HASH_WORDS	src/base/sha256sum.h	32;"	d
+_SHA256Context	src/base/sha256sum.h	/^struct _SHA256Context {$/;"	s
+__ULIB_SHA256_H	src/base/sha256sum.h	27;"	d
+buffer	src/base/sha256sum.h	/^	} buffer;$/;"	m	struct:_SHA256Context	typeref:union:_SHA256Context::__anon11
+bufferLength	src/base/sha256sum.h	/^	uint32_t bufferLength;$/;"	m	struct:_SHA256Context
+bytes	src/base/sha256sum.h	/^		uint8_t bytes[64];$/;"	m	union:_SHA256Context::__anon11
+hash	src/base/sha256sum.h	/^	uint32_t hash[SHA256_HASH_WORDS];$/;"	m	struct:_SHA256Context
+totalLength	src/base/sha256sum.h	/^	uint64_t totalLength;$/;"	m	struct:_SHA256Context
+words	src/base/sha256sum.h	/^		uint32_t words[16];$/;"	m	union:_SHA256Context::__anon11
+getfield	src/base/strutils.c	/^const char *getfield(const char *line, long line_size, char *field,$/;"	f
+getlinefield	src/base/strutils.c	/^const char *getlinefield(const char *line, long line_size, char *field,$/;"	f
+nextline	src/base/strutils.c	/^char *nextline(char *buf, long size)$/;"	f
+__ULIB_STRUTILS_H	src/base/strutils.h	27;"	d
+__ULIB_TIMER_H	src/base/timer.h	27;"	d
+timer_start	src/base/timer.h	/^static inline void timer_start(struct timespec *ts)$/;"	f
+timer_stop	src/base/timer.h	/^static inline double timer_stop(const struct timespec *ts)$/;"	f
+SPLAY_ASSEMBLE	src/base/tree.c	339;"	d	file:
+SPLAY_ASSEMBLE_NPARENT	src/base/tree.c	407;"	d	file:
+SPLAY_LINK_LEFT	src/base/tree.c	327;"	d	file:
+SPLAY_LINK_LEFT_NPARENT	src/base/tree.c	396;"	d	file:
+SPLAY_LINK_RIGHT	src/base/tree.c	315;"	d	file:
+SPLAY_LINK_RIGHT_NPARENT	src/base/tree.c	385;"	d	file:
+SPLAY_ROTATE_LEFT	src/base/tree.c	301;"	d	file:
+SPLAY_ROTATE_LEFT_NPARENT	src/base/tree.c	374;"	d	file:
+SPLAY_ROTATE_RIGHT	src/base/tree.c	285;"	d	file:
+SPLAY_ROTATE_RIGHT_NPARENT	src/base/tree.c	361;"	d	file:
+__avl_balance	src/base/tree.c	/^__avl_balance(struct avl_root *new, struct avl_root **root)$/;"	f	file:
+__rotate_left	src/base/tree.c	/^__rotate_left(struct tree_root *entry,$/;"	f	file:
+__rotate_right	src/base/tree.c	/^__rotate_right(struct tree_root *entry,$/;"	f	file:
+avl_add	src/base/tree.c	/^avl_add(struct avl_root *new,$/;"	f
+avl_del	src/base/tree.c	/^avl_del(struct avl_root *entry, struct avl_root **root)$/;"	f
+avl_map	src/base/tree.c	/^avl_map(struct avl_root *new,$/;"	f
+splay_map	src/base/tree.c	/^splay_map(struct tree_root *new,$/;"	f
+splay_map_nparent	src/base/tree.c	/^splay_map_nparent(struct tree_root *new,$/;"	f
+splay_search	src/base/tree.c	/^splay_search(struct tree_root *entry,$/;"	f
+splay_search_nparent	src/base/tree.c	/^splay_search_nparent(struct tree_root *entry,$/;"	f
+tree_add	src/base/tree.c	/^tree_add(struct tree_root *new,$/;"	f
+tree_del	src/base/tree.c	/^tree_del(struct tree_root *entry, struct tree_root **root)$/;"	f
+tree_map	src/base/tree.c	/^tree_map(struct tree_root *new,$/;"	f
+tree_max	src/base/tree.c	/^tree_max(struct tree_root *root)$/;"	f
+tree_min	src/base/tree.c	/^tree_min(struct tree_root *root)$/;"	f
+tree_predecessor	src/base/tree.c	/^tree_predecessor(struct tree_root *root)$/;"	f
+tree_search	src/base/tree.c	/^tree_search(struct tree_root *entry,$/;"	f
+tree_successor	src/base/tree.c	/^tree_successor(struct tree_root *root)$/;"	f
+AVL_EMPTY	src/base/tree.h	69;"	d
+AVL_ROOT	src/base/tree.h	58;"	d
+AVL_ROOT_INIT	src/base/tree.h	56;"	d
+INIT_AVL_ROOT	src/base/tree.h	61;"	d
+INIT_TREE_ROOT	src/base/tree.h	51;"	d
+NIL	src/base/tree.h	44;"	d
+SPLAY_EMPTY	src/base/tree.h	68;"	d
+TREE_EMPTY	src/base/tree.h	67;"	d
+TREE_ROOT	src/base/tree.h	48;"	d
+TREE_ROOT_INIT	src/base/tree.h	46;"	d
+__ULIB_TREE_H	src/base/tree.h	27;"	d
+avl_entry	src/base/tree.h	255;"	d
+avl_for_each	src/base/tree.h	314;"	d
+avl_for_each_entry	src/base/tree.h	345;"	d
+avl_for_each_entry_safe	src/base/tree.h	357;"	d
+avl_for_each_prev	src/base/tree.h	323;"	d
+avl_for_each_safe	src/base/tree.h	333;"	d
+avl_root	src/base/tree.h	/^struct avl_root {$/;"	s
+balance	src/base/tree.h	/^	int balance:3;$/;"	m	struct:avl_root
+left	src/base/tree.h	/^	struct avl_root *left, *right;$/;"	m	struct:avl_root	typeref:struct:avl_root::avl_root
+left	src/base/tree.h	/^	struct tree_root *left, *right;$/;"	m	struct:tree_root	typeref:struct:tree_root::tree_root
+new	src/base/tree.h	30;"	d
+new	src/base/tree.h	365;"	d
+parent	src/base/tree.h	/^	struct avl_root *parent;$/;"	m	struct:avl_root	typeref:struct:avl_root::avl_root
+parent	src/base/tree.h	/^	struct tree_root *parent;$/;"	m	struct:tree_root	typeref:struct:tree_root::tree_root
+right	src/base/tree.h	/^	struct avl_root *left, *right;$/;"	m	struct:avl_root	typeref:struct:avl_root::
+right	src/base/tree.h	/^	struct tree_root *left, *right;$/;"	m	struct:tree_root	typeref:struct:tree_root::
+tree_entry	src/base/tree.h	246;"	d
+tree_for_each	src/base/tree.h	262;"	d
+tree_for_each_entry	src/base/tree.h	291;"	d
+tree_for_each_entry_safe	src/base/tree.h	303;"	d
+tree_for_each_prev	src/base/tree.h	270;"	d
+tree_for_each_safe	src/base/tree.h	280;"	d
+tree_root	src/base/tree.h	/^struct tree_root {$/;"	s
+RB_AUGMENT	src/base/tree_tpl.h	337;"	d
+RB_BLACK	src/base/tree_tpl.h	308;"	d
+RB_COLOR	src/base/tree_tpl.h	321;"	d
+RB_EMPTY	src/base/tree_tpl.h	323;"	d
+RB_ENTRY	src/base/tree_tpl.h	310;"	d
+RB_FIND	src/base/tree_tpl.h	728;"	d
+RB_FOREACH	src/base/tree_tpl.h	735;"	d
+RB_FOREACH_FROM	src/base/tree_tpl.h	740;"	d
+RB_FOREACH_REVERSE	src/base/tree_tpl.h	750;"	d
+RB_FOREACH_REVERSE_FROM	src/base/tree_tpl.h	755;"	d
+RB_FOREACH_REVERSE_SAFE	src/base/tree_tpl.h	760;"	d
+RB_FOREACH_SAFE	src/base/tree_tpl.h	745;"	d
+RB_GENERATE	src/base/tree_tpl.h	400;"	d
+RB_GENERATE_INTERNAL	src/base/tree_tpl.h	404;"	d
+RB_GENERATE_STATIC	src/base/tree_tpl.h	402;"	d
+RB_HEAD	src/base/tree_tpl.h	296;"	d
+RB_INF	src/base/tree_tpl.h	724;"	d
+RB_INIT	src/base/tree_tpl.h	304;"	d
+RB_INITIALIZER	src/base/tree_tpl.h	301;"	d
+RB_INSERT	src/base/tree_tpl.h	726;"	d
+RB_LEFT	src/base/tree_tpl.h	318;"	d
+RB_MAX	src/base/tree_tpl.h	733;"	d
+RB_MIN	src/base/tree_tpl.h	732;"	d
+RB_NEGINF	src/base/tree_tpl.h	723;"	d
+RB_NEXT	src/base/tree_tpl.h	730;"	d
+RB_NFIND	src/base/tree_tpl.h	729;"	d
+RB_PARENT	src/base/tree_tpl.h	320;"	d
+RB_PREV	src/base/tree_tpl.h	731;"	d
+RB_PROTOTYPE	src/base/tree_tpl.h	381;"	d
+RB_PROTOTYPE_INTERNAL	src/base/tree_tpl.h	385;"	d
+RB_PROTOTYPE_STATIC	src/base/tree_tpl.h	383;"	d
+RB_RED	src/base/tree_tpl.h	309;"	d
+RB_REMOVE	src/base/tree_tpl.h	727;"	d
+RB_RIGHT	src/base/tree_tpl.h	319;"	d
+RB_ROOT	src/base/tree_tpl.h	322;"	d
+RB_ROTATE_LEFT	src/base/tree_tpl.h	340;"	d
+RB_ROTATE_RIGHT	src/base/tree_tpl.h	360;"	d
+RB_SET	src/base/tree_tpl.h	325;"	d
+RB_SET_BLACKRED	src/base/tree_tpl.h	331;"	d
+SPLAY_ASSEMBLE	src/base/tree_tpl.h	110;"	d
+SPLAY_EMPTY	src/base/tree_tpl.h	83;"	d
+SPLAY_ENTRY	src/base/tree_tpl.h	74;"	d
+SPLAY_FIND	src/base/tree_tpl.h	283;"	d
+SPLAY_FOREACH	src/base/tree_tpl.h	290;"	d
+SPLAY_GENERATE	src/base/tree_tpl.h	161;"	d
+SPLAY_HEAD	src/base/tree_tpl.h	62;"	d
+SPLAY_INF	src/base/tree_tpl.h	279;"	d
+SPLAY_INIT	src/base/tree_tpl.h	70;"	d
+SPLAY_INITIALIZER	src/base/tree_tpl.h	67;"	d
+SPLAY_INSERT	src/base/tree_tpl.h	281;"	d
+SPLAY_LEFT	src/base/tree_tpl.h	80;"	d
+SPLAY_LINKLEFT	src/base/tree_tpl.h	98;"	d
+SPLAY_LINKRIGHT	src/base/tree_tpl.h	104;"	d
+SPLAY_MAX	src/base/tree_tpl.h	287;"	d
+SPLAY_MIN	src/base/tree_tpl.h	285;"	d
+SPLAY_NEGINF	src/base/tree_tpl.h	278;"	d
+SPLAY_NEXT	src/base/tree_tpl.h	284;"	d
+SPLAY_PROTOTYPE	src/base/tree_tpl.h	119;"	d
+SPLAY_REMOVE	src/base/tree_tpl.h	282;"	d
+SPLAY_RIGHT	src/base/tree_tpl.h	81;"	d
+SPLAY_ROOT	src/base/tree_tpl.h	82;"	d
+SPLAY_ROTATE_LEFT	src/base/tree_tpl.h	92;"	d
+SPLAY_ROTATE_RIGHT	src/base/tree_tpl.h	86;"	d
+_SYS_TREE_H_	src/base/tree_tpl.h	31;"	d
+__tree_print	src/base/treeutils.c	/^__tree_print(struct tree_root *root,$/;"	f	file:
+tree_count	src/base/treeutils.c	/^size_t tree_count(struct tree_root * root)$/;"	f
+tree_height	src/base/treeutils.c	/^size_t tree_height(struct tree_root *root)$/;"	f
+tree_print	src/base/treeutils.c	/^void tree_print(struct tree_root *root, void (*callback)(struct tree_root *))$/;"	f
+tree_verify	src/base/treeutils.c	/^int tree_verify(struct tree_root *root,$/;"	f
+__ULIB_TREEUTILS_H	src/base/treeutils.h	27;"	d
+ulib_version	src/base/version.c	/^const char *ulib_version()$/;"	f
+ULIB_VERSION_MAJOR	src/base/version.h	29;"	d
+ULIB_VERSION_MINOR	src/base/version.h	30;"	d
+__ULIB_VERSION_H	src/base/version.h	27;"	d
+CC	src/ext1/bloom_filter/Makefile	/^CC	?= gcc$/;"	m
+CFLAGS	src/ext1/bloom_filter/Makefile	/^CFLAGS	?= -g3 -O3 -Wall -W -Werror -pipe -c$/;"	m
+INCPATH	src/ext1/bloom_filter/Makefile	/^INCPATH = $(ROOT)\/include\/ulib$/;"	m
+LIBPATH	src/ext1/bloom_filter/Makefile	/^LIBPATH	= $(ROOT)\/lib$/;"	m
+OBJS	src/ext1/bloom_filter/Makefile	/^OBJS	= bfilter.o$/;"	m
+ROOT	src/ext1/bloom_filter/Makefile	/^ROOT	= ..\/..\/..$/;"	m
+TARGET	src/ext1/bloom_filter/Makefile	/^TARGET	= $(LIBPATH)\/libbfilter.a$/;"	m
+HASH_FUNCTION	src/ext1/bloom_filter/bfilter.c	35;"	d	file:
+OPTIMAL_NFUNC	src/ext1/bloom_filter/bfilter.c	34;"	d	file:
+__init_seeds	src/ext1/bloom_filter/bfilter.c	/^__init_seeds(uint64_t *seeds, int nseed)$/;"	f	file:
+bfilter_clear	src/ext1/bloom_filter/bfilter.c	/^void bfilter_clear(struct bloom_filter *bf, const void *buf, unsigned long buflen)$/;"	f
+bfilter_clear_hash	src/ext1/bloom_filter/bfilter.c	/^void bfilter_clear_hash(struct bloom_filter *bf, unsigned long hash)$/;"	f
+bfilter_create	src/ext1/bloom_filter/bfilter.c	/^int bfilter_create(struct bloom_filter *bf, unsigned long nbits, unsigned long nelem)$/;"	f
+bfilter_destroy	src/ext1/bloom_filter/bfilter.c	/^void bfilter_destroy(struct bloom_filter *bf)$/;"	f
+bfilter_get	src/ext1/bloom_filter/bfilter.c	/^int bfilter_get(struct bloom_filter *bf, const void *buf, unsigned long buflen)$/;"	f
+bfilter_get_hash	src/ext1/bloom_filter/bfilter.c	/^int bfilter_get_hash(struct bloom_filter *bf, unsigned long hash)$/;"	f
+bfilter_set	src/ext1/bloom_filter/bfilter.c	/^void bfilter_set(struct bloom_filter *bf, const void *buf, unsigned long buflen)$/;"	f
+bfilter_set_hash	src/ext1/bloom_filter/bfilter.c	/^void bfilter_set_hash(struct bloom_filter *bf, unsigned long hash)$/;"	f
+bfilter_zero	src/ext1/bloom_filter/bfilter.c	/^void bfilter_zero(struct bloom_filter *bf)$/;"	f
+__BLOOM_FILTER_H	src/ext1/bloom_filter/bfilter.h	27;"	d
+bitmap	src/ext1/bloom_filter/bfilter.h	/^	unsigned long *bitmap;$/;"	m	struct:bloom_filter
+bloom_filter	src/ext1/bloom_filter/bfilter.h	/^struct bloom_filter {$/;"	s
+nbits	src/ext1/bloom_filter/bfilter.h	/^	unsigned long  nbits;$/;"	m	struct:bloom_filter
+nelem	src/ext1/bloom_filter/bfilter.h	/^	unsigned long  nelem;  \/* estimated number of elements *\/$/;"	m	struct:bloom_filter
+nfunc	src/ext1/bloom_filter/bfilter.h	/^	int            nfunc;  \/* number of hash functions *\/$/;"	m	struct:bloom_filter
+seeds	src/ext1/bloom_filter/bfilter.h	/^	uint64_t      *seeds;  \/* seeds for hash functions *\/$/;"	m	struct:bloom_filter
+INCPATH	src/ext1/c++/Makefile	/^INCPATH		= $(WORKROOT)\/include\/ulib$/;"	m
+WORKROOT	src/ext1/c++/Makefile	/^WORKROOT	= ..\/..\/..$/;"	m
+_ALIGN_HASH_H	src/ext1/c++/alignhash.h	48;"	d
+_cur	src/ext1/c++/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_map::const_iterator
+_cur	src/ext1/c++/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_map::iterator
+_cur	src/ext1/c++/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_set::const_iterator
+_cur	src/ext1/c++/alignhash.h	/^		hashing_iterator _cur;$/;"	m	struct:align_hash_set::iterator
+_hashing	src/ext1/c++/alignhash.h	/^		const hashing    _hashing;$/;"	m	struct:align_hash_map::const_iterator
+_hashing	src/ext1/c++/alignhash.h	/^		const hashing    _hashing;$/;"	m	struct:align_hash_set::const_iterator
+_hashing	src/ext1/c++/alignhash.h	/^		hashing          _hashing;$/;"	m	struct:align_hash_map::iterator
+_hashing	src/ext1/c++/alignhash.h	/^		hashing          _hashing;$/;"	m	struct:align_hash_set::iterator
+_hashing	src/ext1/c++/alignhash.h	/^	hashing _hashing;$/;"	m	class:align_hash_map
+_hashing	src/ext1/c++/alignhash.h	/^	hashing _hashing;$/;"	m	class:align_hash_set
+align_hash_exception	src/ext1/c++/alignhash.h	/^struct align_hash_exception : public std::exception$/;"	s
+align_hash_map	src/ext1/c++/alignhash.h	/^	align_hash_map()$/;"	f	class:align_hash_map
+align_hash_map	src/ext1/c++/alignhash.h	/^class align_hash_map$/;"	c
+align_hash_set	src/ext1/c++/alignhash.h	/^	align_hash_set()$/;"	f	class:align_hash_set
+align_hash_set	src/ext1/c++/alignhash.h	/^class align_hash_set$/;"	c
+begin	src/ext1/c++/alignhash.h	/^	begin() const$/;"	f	class:align_hash_map
+begin	src/ext1/c++/alignhash.h	/^	begin() const$/;"	f	class:align_hash_set
+begin	src/ext1/c++/alignhash.h	/^	begin()$/;"	f	class:align_hash_map
+begin	src/ext1/c++/alignhash.h	/^	begin()$/;"	f	class:align_hash_set
+bucket_count	src/ext1/c++/alignhash.h	/^	bucket_count() const$/;"	f	class:align_hash_map
+bucket_count	src/ext1/c++/alignhash.h	/^	bucket_count() const$/;"	f	class:align_hash_set
+clear	src/ext1/c++/alignhash.h	/^	clear() { alignhash_clear(inclass, _hashing); }$/;"	f	class:align_hash_map
+clear	src/ext1/c++/alignhash.h	/^	clear() { alignhash_clear(inclass, _hashing); }$/;"	f	class:align_hash_set
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator() { }$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator() { }$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator(const hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator(const hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator(const iterator &it)$/;"	f	struct:align_hash_map::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^		const_iterator(const iterator &it)$/;"	f	struct:align_hash_set::const_iterator
+const_iterator	src/ext1/c++/alignhash.h	/^	struct const_iterator$/;"	s	class:align_hash_map
+const_iterator	src/ext1/c++/alignhash.h	/^	struct const_iterator$/;"	s	class:align_hash_set
+const_pointer	src/ext1/c++/alignhash.h	/^	typedef const _Val* const_pointer;$/;"	t	class:align_hash_map
+const_reference	src/ext1/c++/alignhash.h	/^	typedef const _Val& const_reference;$/;"	t	class:align_hash_map
+contain	src/ext1/c++/alignhash.h	/^	contain(const _Key &key) const$/;"	f	class:align_hash_map
+contain	src/ext1/c++/alignhash.h	/^	contain(const _Key &key) const$/;"	f	class:align_hash_set
+empty	src/ext1/c++/alignhash.h	/^	empty() const$/;"	f	class:align_hash_map
+empty	src/ext1/c++/alignhash.h	/^	empty() const$/;"	f	class:align_hash_set
+end	src/ext1/c++/alignhash.h	/^	end() const$/;"	f	class:align_hash_map
+end	src/ext1/c++/alignhash.h	/^	end() const$/;"	f	class:align_hash_set
+end	src/ext1/c++/alignhash.h	/^	end()$/;"	f	class:align_hash_map
+end	src/ext1/c++/alignhash.h	/^	end()$/;"	f	class:align_hash_set
+erase	src/ext1/c++/alignhash.h	/^	erase(const _Key &key)$/;"	f	class:align_hash_map
+erase	src/ext1/c++/alignhash.h	/^	erase(const _Key &key)$/;"	f	class:align_hash_set
+erase	src/ext1/c++/alignhash.h	/^	erase(const iterator &it) { alignhash_del(inclass, _hashing, it._cur); }$/;"	f	class:align_hash_map
+erase	src/ext1/c++/alignhash.h	/^	erase(const iterator &it) { alignhash_del(inclass, _hashing, it._cur); }$/;"	f	class:align_hash_set
+find	src/ext1/c++/alignhash.h	/^	find(const _Key &key) const$/;"	f	class:align_hash_map
+find	src/ext1/c++/alignhash.h	/^	find(const _Key &key) const$/;"	f	class:align_hash_set
+find	src/ext1/c++/alignhash.h	/^	find(const _Key &key)$/;"	f	class:align_hash_map
+find	src/ext1/c++/alignhash.h	/^	find(const _Key &key)$/;"	f	class:align_hash_set
+find_or_insert	src/ext1/c++/alignhash.h	/^	find_or_insert(const _Key &key, const _Val &val)$/;"	f	class:align_hash_map
+hashing	src/ext1/c++/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_map::const_iterator
+hashing	src/ext1/c++/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_map::iterator
+hashing	src/ext1/c++/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_set::const_iterator
+hashing	src/ext1/c++/alignhash.h	/^		typedef alignhash_t(inclass) * hashing;$/;"	t	struct:align_hash_set::iterator
+hashing	src/ext1/c++/alignhash.h	/^	typedef alignhash_t(inclass) * hashing;$/;"	t	class:align_hash_map
+hashing	src/ext1/c++/alignhash.h	/^	typedef alignhash_t(inclass) * hashing;$/;"	t	class:align_hash_set
+hashing_iterator	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_map::const_iterator
+hashing_iterator	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_map::iterator
+hashing_iterator	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_set::const_iterator
+hashing_iterator	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t hashing_iterator;$/;"	t	struct:align_hash_set::iterator
+hashing_iterator	src/ext1/c++/alignhash.h	/^	typedef ah_iter_t   hashing_iterator;$/;"	t	class:align_hash_map
+hashing_iterator	src/ext1/c++/alignhash.h	/^	typedef ah_iter_t hashing_iterator;$/;"	t	class:align_hash_set
+insert	src/ext1/c++/alignhash.h	/^	insert(const _Key &key)$/;"	f	class:align_hash_set
+insert	src/ext1/c++/alignhash.h	/^	insert(const _Key &key, const _Val &val, bool displace = false)$/;"	f	class:align_hash_map
+iterator	src/ext1/c++/alignhash.h	/^		iterator() { }$/;"	f	struct:align_hash_map::iterator
+iterator	src/ext1/c++/alignhash.h	/^		iterator() { }$/;"	f	struct:align_hash_set::iterator
+iterator	src/ext1/c++/alignhash.h	/^		iterator(hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_map::iterator
+iterator	src/ext1/c++/alignhash.h	/^		iterator(hashing h, hashing_iterator itr)$/;"	f	struct:align_hash_set::iterator
+iterator	src/ext1/c++/alignhash.h	/^	struct iterator$/;"	s	class:align_hash_map
+iterator	src/ext1/c++/alignhash.h	/^	struct iterator$/;"	s	class:align_hash_set
+key	src/ext1/c++/alignhash.h	/^		key() const$/;"	f	struct:align_hash_map::const_iterator
+key	src/ext1/c++/alignhash.h	/^		key() const$/;"	f	struct:align_hash_map::iterator
+key	src/ext1/c++/alignhash.h	/^		key() const$/;"	f	struct:align_hash_set::const_iterator
+key	src/ext1/c++/alignhash.h	/^		key() const$/;"	f	struct:align_hash_set::iterator
+operator !=	src/ext1/c++/alignhash.h	/^		operator!=(const const_iterator &other) const$/;"	f	struct:align_hash_map::const_iterator
+operator !=	src/ext1/c++/alignhash.h	/^		operator!=(const const_iterator &other) const$/;"	f	struct:align_hash_set::const_iterator
+operator !=	src/ext1/c++/alignhash.h	/^		operator!=(const iterator &other) const$/;"	f	struct:align_hash_map::iterator
+operator !=	src/ext1/c++/alignhash.h	/^		operator!=(const iterator &other) const$/;"	f	struct:align_hash_set::iterator
+operator *	src/ext1/c++/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_map::const_iterator
+operator *	src/ext1/c++/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_map::iterator
+operator *	src/ext1/c++/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_set::const_iterator
+operator *	src/ext1/c++/alignhash.h	/^		operator*() const$/;"	f	struct:align_hash_set::iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_map::const_iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_map::iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_set::const_iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++()$/;"	f	struct:align_hash_set::iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_map::const_iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_map::iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_set::const_iterator
+operator ++	src/ext1/c++/alignhash.h	/^		operator++(int)$/;"	f	struct:align_hash_set::iterator
+operator ->	src/ext1/c++/alignhash.h	/^		operator->() const$/;"	f	struct:align_hash_map::const_iterator
+operator ->	src/ext1/c++/alignhash.h	/^		operator->() const$/;"	f	struct:align_hash_map::iterator
+operator ==	src/ext1/c++/alignhash.h	/^		operator==(const const_iterator &other) const$/;"	f	struct:align_hash_map::const_iterator
+operator ==	src/ext1/c++/alignhash.h	/^		operator==(const const_iterator &other) const$/;"	f	struct:align_hash_set::const_iterator
+operator ==	src/ext1/c++/alignhash.h	/^		operator==(const iterator &other) const$/;"	f	struct:align_hash_map::iterator
+operator ==	src/ext1/c++/alignhash.h	/^		operator==(const iterator &other) const$/;"	f	struct:align_hash_set::iterator
+operator []	src/ext1/c++/alignhash.h	/^	operator[](const _Key &key)$/;"	f	class:align_hash_map
+operator []	src/ext1/c++/alignhash.h	/^	operator[](const _Key &key)$/;"	f	class:align_hash_set
+pointer	src/ext1/c++/alignhash.h	/^		typedef _Val* pointer;$/;"	t	struct:align_hash_map::iterator
+pointer	src/ext1/c++/alignhash.h	/^		typedef const _Val* pointer;$/;"	t	struct:align_hash_map::const_iterator
+pointer	src/ext1/c++/alignhash.h	/^	typedef _Val *      pointer;$/;"	t	class:align_hash_map
+reference	src/ext1/c++/alignhash.h	/^		typedef _Val& reference;$/;"	t	struct:align_hash_map::iterator
+reference	src/ext1/c++/alignhash.h	/^		typedef const _Val& reference;$/;"	t	struct:align_hash_map::const_iterator
+reference	src/ext1/c++/alignhash.h	/^	typedef _Val &      reference;$/;"	t	class:align_hash_map
+size	src/ext1/c++/alignhash.h	/^	size() const$/;"	f	class:align_hash_map
+size	src/ext1/c++/alignhash.h	/^	size() const$/;"	f	class:align_hash_set
+size_type	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_map::const_iterator
+size_type	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_map::iterator
+size_type	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_set::const_iterator
+size_type	src/ext1/c++/alignhash.h	/^		typedef ah_iter_t size_type;$/;"	t	struct:align_hash_set::iterator
+size_type	src/ext1/c++/alignhash.h	/^	typedef ah_iter_t   size_type;$/;"	t	class:align_hash_map
+size_type	src/ext1/c++/alignhash.h	/^	typedef ah_iter_t size_type;$/;"	t	class:align_hash_set
+value	src/ext1/c++/alignhash.h	/^		value() const$/;"	f	struct:align_hash_map::const_iterator
+value	src/ext1/c++/alignhash.h	/^		value() const$/;"	f	struct:align_hash_map::iterator
+value	src/ext1/c++/alignhash.h	/^		value() const$/;"	f	struct:align_hash_set::const_iterator
+value	src/ext1/c++/alignhash.h	/^		value() const$/;"	f	struct:align_hash_set::iterator
+~align_hash_exception	src/ext1/c++/alignhash.h	/^	~align_hash_exception() throw() { }$/;"	f	struct:align_hash_exception
+~align_hash_map	src/ext1/c++/alignhash.h	/^	~align_hash_map()$/;"	f	class:align_hash_map
+~align_hash_set	src/ext1/c++/alignhash.h	/^	~align_hash_set()$/;"	f	class:align_hash_set
+CC	src/ext1/comb/Makefile	/^CC	?= gcc$/;"	m
+CFLAGS	src/ext1/comb/Makefile	/^CFLAGS	?= -g3 -O3 -Wall -W -Werror -pipe -c$/;"	m
+INCPATH	src/ext1/comb/Makefile	/^INCPATH = $(ROOT)\/include\/ulib$/;"	m
+LIBPATH	src/ext1/comb/Makefile	/^LIBPATH	= $(ROOT)\/lib$/;"	m
+OBJS	src/ext1/comb/Makefile	/^OBJS	= comb.o$/;"	m
+ROOT	src/ext1/comb/Makefile	/^ROOT	= ..\/..\/..$/;"	m
+TARGET	src/ext1/comb/Makefile	/^TARGET	= $(LIBPATH)\/libcomb.a$/;"	m
+comb_begin	src/ext1/comb/comb.c	/^int comb_begin(int m, int n, combiter_t *iter)$/;"	f
+comb_elem	src/ext1/comb/comb.c	/^int comb_elem(comb_t *comb)$/;"	f
+comb_get	src/ext1/comb/comb.c	/^int comb_get(combiter_t *iter, comb_t *comb)$/;"	f
+comb_next	src/ext1/comb/comb.c	/^int comb_next(combiter_t *iter)$/;"	f
+__ULIB_COMB_H	src/ext1/comb/comb.h	27;"	d
+comb_t	src/ext1/comb/comb.h	/^	typedef uint64_t comb_t;$/;"	t
+combiter_t	src/ext1/comb/comb.h	/^	} combiter_t;$/;"	t	typeref:struct:__anon8
+cur	src/ext1/comb/comb.h	/^		comb_t cur;$/;"	m	struct:__anon8
+max	src/ext1/comb/comb.h	/^		comb_t max;$/;"	m	struct:__anon8
+CC	src/ext1/console/Makefile	/^CC	?= gcc$/;"	m
+CFLAGS	src/ext1/console/Makefile	/^CFLAGS	?= -g3 -O3 -Wall -W -Werror -pipe -c -fno-strict-aliasing$/;"	m
+INCPATH	src/ext1/console/Makefile	/^INCPATH = $(ROOT)\/include\/ulib$/;"	m
+LIBPATH	src/ext1/console/Makefile	/^LIBPATH	= $(ROOT)\/lib$/;"	m
+OBJS	src/ext1/console/Makefile	/^OBJS	= console.o argv_split.o$/;"	m
+ROOT	src/ext1/console/Makefile	/^ROOT	= ..\/..\/..$/;"	m
+TARGET	src/ext1/console/Makefile	/^TARGET	= $(LIBPATH)\/libshell.a$/;"	m
+_GNU_SOURCE	src/ext1/console/argv_split.c	26;"	d	file:
+argv_free	src/ext1/console/argv_split.c	/^void argv_free(char **argv)$/;"	f
+argv_split	src/ext1/console/argv_split.c	/^char **argv_split(const char *str, int *argcp)$/;"	f
+count_argc	src/ext1/console/argv_split.c	/^static int count_argc(const char *str)$/;"	f	file:
+skip_arg	src/ext1/console/argv_split.c	/^static const char *skip_arg(const char *cp)$/;"	f	file:
+skip_spaces	src/ext1/console/argv_split.c	/^static const char *skip_spaces(const char *cp)$/;"	f	file:
+__ULIB_ARGV_H	src/ext1/console/argv_split.h	27;"	d
+DEF_PROMPT	src/ext1/console/console.c	34;"	d	file:
+READ_BUFLEN	src/ext1/console/console.c	35;"	d	file:
+STRCMP	src/ext1/console/console.c	38;"	d	file:
+STRHASH	src/ext1/console/console.c	37;"	d	file:
+__readline	src/ext1/console/console.c	/^static int __readline(console_t *ctx)$/;"	f	file:
+console_bind	src/ext1/console/console.c	/^int console_bind(console_t *ctx, const char *cmdlet, console_fcn_t f)$/;"	f
+console_destroy	src/ext1/console/console.c	/^void console_destroy(console_t *ctx)$/;"	f
+console_exec	src/ext1/console/console.c	/^int console_exec(console_t *ctx, const char *cmd)$/;"	f
+console_fcn_t	src/ext1/console/console.c	/^typedef int (*console_fcn_t) (int argc, const char *argv[]);$/;"	t	file:
+console_init	src/ext1/console/console.c	/^int console_init(console_t *ctx)$/;"	f
+console_loop	src/ext1/console/console.c	/^int console_loop(console_t *ctx, int count, const char *term)$/;"	f
+console_pmpt	src/ext1/console/console.c	/^int console_pmpt(console_t *ctx, const char *pmpt)$/;"	f
+console_t	src/ext1/console/console.c	/^} console_t;$/;"	t	typeref:struct:__anon10	file:
+pmpt	src/ext1/console/console.c	/^	char * pmpt;$/;"	m	struct:__anon10	file:
+rbuf	src/ext1/console/console.c	/^	char * rbuf;$/;"	m	struct:__anon10	file:
+rbuflen	src/ext1/console/console.c	/^	int    rbuflen;$/;"	m	struct:__anon10	file:
+rfd	src/ext1/console/console.c	/^	int    rfd;$/;"	m	struct:__anon10	file:
+DEF_PROMPT	src/ext1/console/console.h	29;"	d
+__ULIB_CONSOLE_H	src/ext1/console/console.h	27;"	d
+console_fcn_t	src/ext1/console/console.h	/^typedef int (*console_fcn_t) (int argc, const char *argv[]);$/;"	t
+console_t	src/ext1/console/console.h	/^} console_t;$/;"	t	typeref:struct:__anon9
+idx	src/ext1/console/console.h	/^	void * idx;$/;"	m	struct:__anon9
+pmpt	src/ext1/console/console.h	/^	char * pmpt;$/;"	m	struct:__anon9
+rbuf	src/ext1/console/console.h	/^	char * rbuf;$/;"	m	struct:__anon9
+rbuflen	src/ext1/console/console.h	/^	int    rbuflen;$/;"	m	struct:__anon9
+rfd	src/ext1/console/console.h	/^	int    rfd;$/;"	m	struct:__anon9
+CXX	test/Makefile	/^CXX		?= g++$/;"	m
+CXXFLAGS	test/Makefile	/^CXXFLAGS	?= -g3 -O3 -W -Wall$/;"	m
+DEBUG	test/Makefile	/^DEBUG		?=$/;"	m
+INCPATH	test/Makefile	/^INCPATH		= ..\/include$/;"	m
+LDFLAGS	test/Makefile	/^LDFLAGS		?= -lulib -lrt -lm$/;"	m
+LIBPATH	test/Makefile	/^LIBPATH		= ..\/lib$/;"	m
+TARGET	test/Makefile	/^TARGET		= alignhash.test alignhash_bench.test fbsearch.test version.test tree.test \\$/;"	m
+main	test/test_aes.cpp	/^int main()$/;"	f
+test_key1	test/test_aes.cpp	/^const unsigned char test_key1[16] = $/;"	v
+test_key2	test/test_aes.cpp	/^const unsigned char test_key2[16] =$/;"	v
+test_key3	test/test_aes.cpp	/^const unsigned char test_key3[24] =$/;"	v
+test_vec1	test/test_aes.cpp	/^const unsigned char test_vec1[16] =$/;"	v
+test_vec2	test/test_aes.cpp	/^const unsigned char test_vec2[16] =$/;"	v
+test_vec3	test/test_aes.cpp	/^const unsigned char test_vec3[16] =$/;"	v
+test_vec4	test/test_aes.cpp	/^const unsigned char test_vec4[16] =$/;"	v
+test_vec5	test/test_aes.cpp	/^const unsigned char test_vec5[16] =$/;"	v
+c_str	test/test_alignhash.cpp	/^	const char *c_str;$/;"	m	struct:str	file:
+main	test/test_alignhash.cpp	/^int main()$/;"	f
+operator ==	test/test_alignhash.cpp	/^	bool operator==(const str &other) const$/;"	f	struct:str
+operator size_t	test/test_alignhash.cpp	/^	operator size_t() const$/;"	f	struct:str
+str	test/test_alignhash.cpp	/^	str(const char *s = 0)$/;"	f	struct:str
+str	test/test_alignhash.cpp	/^struct str {$/;"	s	file:
+constant_insert	test/test_alignhash_bench.cpp	/^void constant_insert(long ins, long get)$/;"	f
+counter	test/test_alignhash_bench.cpp	/^volatile long counter = 0;$/;"	v
+main	test/test_alignhash_bench.cpp	/^int main(int argc, char *argv[])$/;"	f
+myrand	test/test_alignhash_bench.cpp	11;"	d	file:
+register_sig_handler	test/test_alignhash_bench.cpp	/^void register_sig_handler()$/;"	f
+sig_alarm_handler	test/test_alignhash_bench.cpp	/^static void sig_alarm_handler(int)$/;"	f	file:
+u	test/test_alignhash_bench.cpp	/^uint64_t u, v, w;$/;"	v
+usage	test/test_alignhash_bench.cpp	/^const char *usage = $/;"	v
+v	test/test_alignhash_bench.cpp	/^uint64_t u, v, w;$/;"	v
+w	test/test_alignhash_bench.cpp	/^uint64_t u, v, w;$/;"	v
+avl_node	test/test_avl_bench.cpp	/^	avl_node(uint64_t val = 0)$/;"	f	struct:avl_node
+avl_node	test/test_avl_bench.cpp	/^struct avl_node {$/;"	s	file:
+avl_node_cmp	test/test_avl_bench.cpp	/^int avl_node_cmp(const void *a, const void *b)$/;"	f
+constant_insert	test/test_avl_bench.cpp	/^void constant_insert(long ins, long get)$/;"	f
+counter	test/test_avl_bench.cpp	/^volatile long counter = 0;$/;"	v
+link	test/test_avl_bench.cpp	/^	struct avl_root link;$/;"	m	struct:avl_node	typeref:struct:avl_node::avl_root	file:
+main	test/test_avl_bench.cpp	/^int main(int argc, char *argv[])$/;"	f
+myrand	test/test_avl_bench.cpp	12;"	d	file:
+operator <	test/test_avl_bench.cpp	/^	operator<(const avl_node &other) const$/;"	f	struct:avl_node
+operator >	test/test_avl_bench.cpp	/^	operator>(const avl_node &other) const$/;"	f	struct:avl_node
+register_sig_handler	test/test_avl_bench.cpp	/^void register_sig_handler()$/;"	f
+sig_alarm_handler	test/test_avl_bench.cpp	/^static void sig_alarm_handler(int)$/;"	f	file:
+u	test/test_avl_bench.cpp	/^uint64_t u, v, w;$/;"	v
+usage	test/test_avl_bench.cpp	/^const char *usage = $/;"	v
+v	test/test_avl_bench.cpp	/^uint64_t u, v, w;$/;"	v
+value	test/test_avl_bench.cpp	/^	uint64_t value;$/;"	m	struct:avl_node	file:
+w	test/test_avl_bench.cpp	/^uint64_t u, v, w;$/;"	v
+main	test/test_bfilter.cpp	/^int main()$/;"	f
+constant_insert	test/test_bfilter_bench.cpp	/^void constant_insert(long ins, long get)$/;"	f
+counter	test/test_bfilter_bench.cpp	/^volatile long counter = 0;$/;"	v
+main	test/test_bfilter_bench.cpp	/^int main(int argc, char *argv[])$/;"	f
+myrand	test/test_bfilter_bench.cpp	11;"	d	file:
+register_sig_handler	test/test_bfilter_bench.cpp	/^void register_sig_handler()$/;"	f
+sig_alarm_handler	test/test_bfilter_bench.cpp	/^static void sig_alarm_handler(int)$/;"	f	file:
+u	test/test_bfilter_bench.cpp	/^uint64_t u, v, w;$/;"	v
+usage	test/test_bfilter_bench.cpp	/^const char *usage = $/;"	v
+v	test/test_bfilter_bench.cpp	/^uint64_t u, v, w;$/;"	v
+w	test/test_bfilter_bench.cpp	/^uint64_t u, v, w;$/;"	v
+main	test/test_bitmap.cpp	/^int main()$/;"	f
+main	test/test_comb.cpp	/^int main()$/;"	f
+cmd_param_ok	test/test_console.cpp	/^int cmd_param_ok(int argc, const char **argv)$/;"	f
+cmd_return_error	test/test_console.cpp	/^int cmd_return_error(int, const char **)$/;"	f
+cmd_set_ok	test/test_console.cpp	/^int cmd_set_ok(int, const char **)$/;"	f
+g_ok	test/test_console.cpp	/^int g_ok = 0;$/;"	v
+main	test/test_console.cpp	/^int main()$/;"	f
+comp_line	test/test_fbsearch.cpp	/^int comp_line(const char *line, void *param)$/;"	f
+main	test/test_fbsearch.cpp	/^int main()$/;"	f
+main	test/test_gcd.cpp	/^int main()$/;"	f
+LESSTHAN	test/test_heapsort.cpp	5;"	d	file:
+a	test/test_heapsort.cpp	/^    char a;$/;"	m	struct:aaa	file:
+aaa	test/test_heapsort.cpp	/^typedef struct aaa$/;"	s	file:
+b	test/test_heapsort.cpp	/^    int b;$/;"	m	struct:aaa	file:
+bbb	test/test_heapsort.cpp	/^}bbb;$/;"	t	typeref:struct:aaa	file:
+main	test/test_heapsort.cpp	/^int main()$/;"	f
+data	test/test_list.cpp	/^	int data;$/;"	m	struct:list_node	file:
+link	test/test_list.cpp	/^	struct list_head link;$/;"	m	struct:list_node	typeref:struct:list_node::list_head	file:
+list_node	test/test_list.cpp	/^struct list_node {$/;"	s	file:
+main	test/test_list.cpp	/^int main()$/;"	f
+comp_list_node	test/test_listsort.cpp	/^int comp_list_node(void *, const void *x, const void *y)$/;"	f
+data	test/test_listsort.cpp	/^	int data;$/;"	m	struct:list_node	file:
+link	test/test_listsort.cpp	/^	struct list_head link;$/;"	m	struct:list_node	typeref:struct:list_node::list_head	file:
+list_node	test/test_listsort.cpp	/^struct list_node {$/;"	s	file:
+main	test/test_listsort.cpp	/^int main()$/;"	f
+main	test/test_log.cpp	/^int main()$/;"	f
+LESSTHAN	test/test_part.cpp	5;"	d	file:
+main	test/test_part.cpp	/^int main()$/;"	f
+main	test/test_rand.cpp	/^int main()$/;"	f
+main	test/test_rc4.cpp	/^int main()$/;"	f
+test_key1	test/test_rc4.cpp	/^const unsigned char test_key1[] =$/;"	v
+test_key2	test/test_rc4.cpp	/^const unsigned char test_key2[] =$/;"	v
+test_key3	test/test_rc4.cpp	/^const unsigned char test_key3[] =$/;"	v
+test_vec1	test/test_rc4.cpp	/^const unsigned char test_vec1[] =$/;"	v
+test_vec2	test/test_rc4.cpp	/^const unsigned char test_vec2[] =$/;"	v
+test_vec3	test/test_rc4.cpp	/^const unsigned char test_vec3[] =$/;"	v
+constant_insert	test/test_set_bench.cpp	/^void constant_insert(long ins, long get)$/;"	f
+counter	test/test_set_bench.cpp	/^volatile long counter = 0;$/;"	v
+elem	test/test_set_bench.cpp	/^	elem(uint64_t val = 0)$/;"	f	struct:elem
+elem	test/test_set_bench.cpp	/^struct elem {$/;"	s	file:
+main	test/test_set_bench.cpp	/^int main(int argc, char *argv[])$/;"	f
+myrand	test/test_set_bench.cpp	12;"	d	file:
+operator <	test/test_set_bench.cpp	/^	operator<(const elem &other) const$/;"	f	struct:elem
+operator ==	test/test_set_bench.cpp	/^	bool operator==(const elem &other) const$/;"	f	struct:elem
+operator >	test/test_set_bench.cpp	/^	operator>(const elem &other) const$/;"	f	struct:elem
+register_sig_handler	test/test_set_bench.cpp	/^void register_sig_handler()$/;"	f
+sig_alarm_handler	test/test_set_bench.cpp	/^static void sig_alarm_handler(int)$/;"	f	file:
+u	test/test_set_bench.cpp	/^uint64_t u, v, w;$/;"	v
+usage	test/test_set_bench.cpp	/^const char *usage = $/;"	v
+v	test/test_set_bench.cpp	/^uint64_t u, v, w;$/;"	v
+value	test/test_set_bench.cpp	/^	uint64_t value;$/;"	m	struct:elem	file:
+w	test/test_set_bench.cpp	/^uint64_t u, v, w;$/;"	v
+main	test/test_sha256sum.cpp	/^int main()$/;"	f
+test_key1	test/test_sha256sum.cpp	/^const unsigned char test_key1[] =$/;"	v
+test_vec1	test/test_sha256sum.cpp	/^const unsigned char test_vec1[32] =$/;"	v
+constant_insert	test/test_splay_bench.cpp	/^void constant_insert(long ins, long get)$/;"	f
+counter	test/test_splay_bench.cpp	/^volatile long counter = 0;$/;"	v
+link	test/test_splay_bench.cpp	/^	struct tree_root link;$/;"	m	struct:tree_node	typeref:struct:tree_node::tree_root	file:
+main	test/test_splay_bench.cpp	/^int main(int argc, char *argv[])$/;"	f
+myrand	test/test_splay_bench.cpp	12;"	d	file:
+operator <	test/test_splay_bench.cpp	/^	operator<(const tree_node &other) const$/;"	f	struct:tree_node
+operator >	test/test_splay_bench.cpp	/^	operator>(const tree_node &other) const$/;"	f	struct:tree_node
+register_sig_handler	test/test_splay_bench.cpp	/^void register_sig_handler()$/;"	f
+sig_alarm_handler	test/test_splay_bench.cpp	/^static void sig_alarm_handler(int)$/;"	f	file:
+tree_node	test/test_splay_bench.cpp	/^	tree_node(uint64_t val = 0)$/;"	f	struct:tree_node
+tree_node	test/test_splay_bench.cpp	/^struct tree_node {$/;"	s	file:
+tree_node_cmp	test/test_splay_bench.cpp	/^int tree_node_cmp(const void *a, const void *b)$/;"	f
+u	test/test_splay_bench.cpp	/^uint64_t u, v, w;$/;"	v
+usage	test/test_splay_bench.cpp	/^const char *usage = $/;"	v
+v	test/test_splay_bench.cpp	/^uint64_t u, v, w;$/;"	v
+value	test/test_splay_bench.cpp	/^	uint64_t value;$/;"	m	struct:tree_node	file:
+w	test/test_splay_bench.cpp	/^uint64_t u, v, w;$/;"	v
+comp_tree_node	test/test_tree.cpp	/^int comp_tree_node(const void *x, const void *y)$/;"	f
+data	test/test_tree.cpp	/^	int data;$/;"	m	struct:tree_node	file:
+link	test/test_tree.cpp	/^	struct tree_root link;$/;"	m	struct:tree_node	typeref:struct:tree_node::tree_root	file:
+main	test/test_tree.cpp	/^int main()$/;"	f
+tree_node	test/test_tree.cpp	/^struct tree_node {$/;"	s	file:
+main	test/test_version.cpp	/^int main()$/;"	f

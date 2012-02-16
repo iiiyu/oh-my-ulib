@@ -1,0 +1,27 @@
+Why ULIB?
+ULIB is a lightweight library of useful toolkit for C/C++ programming. In contrast to STL, most components of ULIB provide better efficiency and are thereby good alternatives for high-performance applications.
+
+Components
+Currently, it includes:
+
+A simple doubly linked list, this can also be used as queue and stack.
+An efficient hashing scheme - alignhash, both hash_map and hash_set are provided. C macros & C++ templates. See performance comparison at AlignedHashingPerformance.
+Binary trees, such as BST, splay tree, red-black tree and AVL tree.
+A list sorting algorithm, this is faster than the qsort() in libc.
+A binary search algorithm for text files. It works with line-sorted text files.
+A heap and the corresponding sorting algorithm, this is faster than the STL version.
+A partition algorithm, this partitions an array into three parts |<=K| K |>= K|, O(1) complexity.
+A collection of fast hash functions for various data types.
+Primitives for random number generation. Especially useful for designing numerical algorithms.
+A collection of bit operation hacks. Especially useful for numerical algorithms and cryptography.
+Both a full featured bitmap and a bloom filter.
+Several cryptographic algorithms, e.g., AES, RC4, SHA-x, MD5 and etc.
+A collection of string utilities, including primitives for parallel file processing.
+Timer, shell, combination enumerator and so on.
+Supported platforms
+64-bit Linux-like OSs are recommended, also available for 32-bit platforms.
+Windows with Cygwin.
+Performance
+A comparison between ULIB aligned hashing and Google sparse/dense hashing can be found at AlignedHashingPerformance.
+Acknowledgment
+The successful completion of ulib is the result of the cooperation, confidence, and endurance of many people. I greatly appreciate the contributions of those Linux kernel developers and many free software authors.
