@@ -1,8 +1,8 @@
 ULIBINC	= include/
 ULIBLIB = lib/
 
-TARGET	= line2list
-OBJS	= line2list.o
+TARGET	= word2tree
+OBJS	= word2tree.o
 
 CC	?= gcc
 CFLAGS	?= -c -O3 -g3 -W -Wall -pipe -DNDEBUG
