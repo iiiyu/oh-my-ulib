@@ -22,12 +22,18 @@ int comp_tree_node(const void *x, const void *y)
 
     struct tree_node *node_x = tree_entry(x, struct tree_node, link);
     struct tree_node *node_y = tree_entry(y, struct tree_node, link);
+
+
+    if(!strcmp(node_x->word, node_y->word))
+    {
+        node_y->count += 1;
+    }
   
     return strcmp(node_x->word, node_y->word);
 }
 
 
-void word2tree(struct tree_root *root, const char *file)
+struct tree_root * word2tree(struct tree_root *root, const char *file)
 {
     FILE *fp;
     struct tree_node *p;
@@ -46,21 +52,35 @@ void word2tree(struct tree_root *root, const char *file)
 
     while (getline(&line, &n, fp) > 0)
     {
+    
+        while(1)
+        {
+            if(line[0] == 9){
+                line += 1;
+            }
+            else
+            {
+                break;
+            }
+        }
         p = (struct tree_node *) malloc(sizeof(struct tree_node));
         if (p == NULL) {
             ULIB_FATAL("cannot new entry");
             exit(EXIT_FAILURE);
         } 
-        tmpstr = strtok(line, tok);
-        p->word = (char *)malloc(sizeof(char) * strlen(tmpstr));
-        strcpy(p->word, tmpstr);
-        p->count = 0;
+        //tmpstr = strtok(line, tok);
+        //p->word = (char *)malloc(sizeof(char) * strlen(tmpstr));
+       // strcpy(p->word, tmpstr);
+        p->word = strtok(line, tok);
+        p->count = 1;
         if(&p->link != tree_map(&p->link, comp_tree_node, &root))
         {
-            
+
+            //free(p->word);
+            free(p);
         }
 
-        while((tmpstr = strtok(NULL, tok)))
+        while((line = strtok(NULL, tok)))
         {
             p = (struct tree_node *) malloc(sizeof(struct tree_node));
             if (p == NULL) 
@@ -68,12 +88,17 @@ void word2tree(struct tree_root *root, const char *file)
                 ULIB_FATAL("cannot new entry");
                 exit(EXIT_FAILURE);
             } 
+            /*
             p->word = (char *)malloc(sizeof(char) * strlen(tmpstr));
             strcpy(p->word, tmpstr);
-            p->count = 0;
+            */
+            p->word = strtok(line, tok);
+            p->count = 1;
+
             if(&p->link != tree_map(&p->link, comp_tree_node, &root))
             {
-            
+                //free(p->word);
+                free(p);
             }
         }
     }
@@ -82,6 +107,7 @@ void word2tree(struct tree_root *root, const char *file)
         printf("data for current node is %s\n", p->word);
     }
     */
+    return root;
 }
 
 
@@ -96,52 +122,11 @@ int main(int argc, char const *argv[])
         return -1;
     }
 
-    word2tree(root, argv[1]);
-/*
-    node = (struct tree_node *)malloc(sizeof(struct tree_node));
-    //node->word = (char *)malloc(sizeof(char)*1024);
-    node->count = 1;
-    node->word = "1";
-
-    tree_map(&node->link, comp_tree_node, &root);
-
-    node = (struct tree_node *)malloc(sizeof(struct tree_node));
-    //node->word = (char *)malloc(sizeof(char)*1024);
-    node->count = 1;
-    node->word = "2";
-
-    tree_map(&node->link, comp_tree_node, &root);
-    
-
-    node = (struct tree_node *)malloc(sizeof(struct tree_node));
-    //node->word = (char *)malloc(sizeof(char)*1024);
-    node->count = 1;
-    node->word = "3";
-
-    tree_map(&node->link, comp_tree_node, &root);
-    
-
-    node = (struct tree_node *)malloc(sizeof(struct tree_node));
-    //node->word = (char *)malloc(sizeof(char)*1024);
-    node->count = 1;
-    node->word = "4";
-
-    tree_map(&node->link, comp_tree_node, &root);
-    
-
-    node = (struct tree_node *)malloc(sizeof(struct tree_node));
-    //node->word = (char *)malloc(sizeof(char)*1024);
-    node->count = 1;
-    node->word = "5";
-
-    tree_map(&node->link, comp_tree_node, &root);
-    
-*/
-
+    root = word2tree(root, argv[1]);
 
 
     tree_for_each_entry(node, root, link) {
-        printf("data for current node is %s\n", node->word);
+        printf("data for current node is %s %d\n", node->word, node->count);
     }
     
     
