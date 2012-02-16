@@ -21,7 +21,7 @@ clean:
 	rm -rf $(TARGET) $(OBJS)
 	rm -rf include/
 	rm -rf lib/
-	rm -rf pwgen.key
+	find . -name "*~" | xargs rm -f
 
 remove_bak:
 	find . -name "*~" | xargs rm -f
