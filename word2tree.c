@@ -32,6 +32,31 @@ int comp_tree_node(const void *x, const void *y)
     return strcmp(node_x->word, node_y->word);
 }
 
+int search_comp_tree_node(const void *x, const void *y)
+{
+    struct tree_node *node_x = tree_entry(x, struct tree_node, link);
+    struct tree_node *node_y = tree_entry(y, struct tree_node, link);
+    if (!strcmp(node_x->word, node_y->word))  
+    {
+        printf("find :%s->%d\n", node_y->word, node_y->count);
+    }
+
+    return strcmp(node_x->word, node_y->word);
+}
+
+
+void free_tree(struct tree_root *root)
+{
+    struct tree_node *node, *n;
+
+    tree_for_each_entry_safe(node, n, root, link)
+    {
+        node->word = NULL;
+        free(node->word);
+        node->count = 0;
+        free(node);
+    }
+}
 
 struct tree_root * word2tree(struct tree_root *root, const char *file)
 {
@@ -68,15 +93,11 @@ struct tree_root * word2tree(struct tree_root *root, const char *file)
             ULIB_FATAL("cannot new entry");
             exit(EXIT_FAILURE);
         } 
-        //tmpstr = strtok(line, tok);
-        //p->word = (char *)malloc(sizeof(char) * strlen(tmpstr));
-       // strcpy(p->word, tmpstr);
         p->word = strtok(line, tok);
         p->count = 1;
         if(&p->link != tree_map(&p->link, comp_tree_node, &root))
         {
 
-            //free(p->word);
             free(p);
         }
 
@@ -88,25 +109,16 @@ struct tree_root * word2tree(struct tree_root *root, const char *file)
                 ULIB_FATAL("cannot new entry");
                 exit(EXIT_FAILURE);
             } 
-            /*
-            p->word = (char *)malloc(sizeof(char) * strlen(tmpstr));
-            strcpy(p->word, tmpstr);
-            */
             p->word = strtok(line, tok);
             p->count = 1;
 
             if(&p->link != tree_map(&p->link, comp_tree_node, &root))
             {
-                //free(p->word);
                 free(p);
             }
         }
     }
-/*
-    tree_for_each_entry(p, root, link) {
-        printf("data for current node is %s\n", p->word);
-    }
-    */
+
     return root;
 }
 
@@ -116,6 +128,9 @@ int main(int argc, char const *argv[])
     struct tree_root *root = 0; 
     struct tree_node *node;
     struct tree_node *tmp;
+
+    tmp = (struct tree_node *) malloc(sizeof(struct tree_node));
+    tmp->word = (char *)malloc(sizeof(char) * 1024);
 
     if (argc != 2) {
         ULIB_FATAL("usage: %s file", argv[0]);
@@ -128,9 +143,20 @@ int main(int argc, char const *argv[])
     tree_for_each_entry(node, root, link) {
         printf("data for current node is %s %d\n", node->word, node->count);
     }
+
+
+
+    printf("Input you want find word:\n");
+    gets(tmp->word);
+
+    if(!tree_search(tmp, search_comp_tree_node, root ))
+    {
+        printf("not find.\n");
+    }
+
+    free_tree(root);
     
     
-    printf("passed\n");
 
     return 0;
 }
